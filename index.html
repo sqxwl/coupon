@@ -1,0 +1,1689 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+	<meta name="renderer" content="webkit" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<title>多卖客 </title>
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link href="css/tools/layui.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/tools/layer.css" />
+	<script src="js/tools/jquery.js"></script>
+	<script type="text/javascript" src="js/tools/clipboard.min.js"></script>
+	<script src="js/tools/layer.js"></script>
+	<script src="js/tools/lib.js"></script>
+</head>
+
+<body class="body-idx">
+	<!-- 今日精选好券列表css -->
+	<link rel="stylesheet" href="css/tools/ul-prolist.css">
+	<!-- 今日精选好券列表css end-->
+	<!-- 分类一优惠券1 -->
+	<link rel="stylesheet" href="css/tools/ul-quan1.css">
+	<!-- 分类一优惠券1 end-->
+	<!-- 分类二优惠券2 -->
+	<link rel="stylesheet" href="css/tools/ul-quan2.css">
+	<!-- 分类二优惠券2 end-->
+	<!-- 分类一优惠券3 -->
+	<link rel="stylesheet" href="css/tools/ul-quan3.css">
+	<!-- 分类一优惠券3 end-->
+
+	<div class="main">
+		<div class="row-h1" style="background-image: url(http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/images/hb3.jpg);">
+			<div class="wp ht">
+				<!-- 搜索 -->
+				<div class="m-ht1">
+					<div class="s1">
+						<a href="./index.php?i=14&c=entry&do=shoucanglist&m=tiger_newhu">
+							<i></i>
+							<span>收藏</span>
+						</a>
+					</div>
+					<div class="s3">
+						<a href="./index.php?i=14&c=entry&pttype=0&do=news&m=tiger_newhu">
+							<i style="background-image:url(http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/images/xin.png) "></i>消息
+						</a>
+					</div>
+					<div class="s2" style="background: #fff;">
+						<form id="search-form" action="./index.php?i=14&c=entry&do=cqlist&m=tiger_newhu" method="get">
+							<input type="hidden" name="i" value="14">
+							<input type="hidden" name="c" value="entry">
+							<input type="hidden" name="dluid" value="">
+							<input type="hidden" name="pid" value="mm_30925699_85950268_15983200451">
+							<input type="hidden" name="m" value="tiger_newhu">
+							<input type="hidden" name="do" value="cqlist">
+							<input type="hidden" name="zn" value="0">
+							<input type="text" placeholder="输入你要的商品名称" name="key" id="key" style="width: 80%;background:  none;background: #fff;">
+							<input type="submit" class="submit" name="" id="" value="" style="width:  20%;right: 0;left: initial;background-position: 70% 50%;
+							"></form>
+						</div>
+					</div>
+				</div>
+				<div class="m-ht2 fix">
+					<!-- 展开按钮 -->
+					<div class="btn js-btn"></div>
+					<!-- 显示菜单 -->
+					<div class="show-box">
+						<div class="wp">
+							<div class="chose">
+								今日精选
+							</div>
+							<ul class="ul-ht1">
+								<li><a href="./index.php?i=14&c=entry&type=1&px=&pid=mm_30925699_85950268_15983200451&dluid=&do=Newcat&m=tiger_newhu">女装</a></li>
+								<li><a href="./index.php?i=14&c=entry&type=2&px=&pid=mm_30925699_85950268_15983200451&dluid=&do=Newcat&m=tiger_newhu">男装</a></li>
+								<li><a href="./index.php?i=14&c=entry&type=3&px=&pid=mm_30925699_85950268_15983200451&dluid=&do=Newcat&m=tiger_newhu">内衣</a></li>
+								<li><a href="./index.php?i=14&c=entry&type=4&px=&pid=mm_30925699_85950268_15983200451&dluid=&do=Newcat&m=tiger_newhu">美妆</a></li>
+								<li><a href="./index.php?i=14&c=entry&type=5&px=&pid=mm_30925699_85950268_15983200451&dluid=&do=Newcat&m=tiger_newhu">配饰</a></li>
+								<li><a href="./index.php?i=14&c=entry&type=6&px=&pid=mm_30925699_85950268_15983200451&dluid=&do=Newcat&m=tiger_newhu">鞋品</a></li>
+								<li><a href="./index.php?i=14&c=entry&type=7&px=&pid=mm_30925699_85950268_15983200451&dluid=&do=Newcat&m=tiger_newhu">箱包</a></li>
+								<li><a href="./index.php?i=14&c=entry&type=8&px=&pid=mm_30925699_85950268_15983200451&dluid=&do=Newcat&m=tiger_newhu">儿童</a></li>
+								<li><a href="./index.php?i=14&c=entry&type=9&px=&pid=mm_30925699_85950268_15983200451&dluid=&do=Newcat&m=tiger_newhu">母婴</a></li>
+								<li><a href="./index.php?i=14&c=entry&type=10&px=&pid=mm_30925699_85950268_15983200451&dluid=&do=Newcat&m=tiger_newhu">居家</a></li>
+								<li><a href="./index.php?i=14&c=entry&type=11&px=&pid=mm_30925699_85950268_15983200451&dluid=&do=Newcat&m=tiger_newhu">美食</a></li>
+								<li><a href="./index.php?i=14&c=entry&type=12&px=&pid=mm_30925699_85950268_15983200451&dluid=&do=Newcat&m=tiger_newhu">数码</a></li>
+								<li><a href="./index.php?i=14&c=entry&type=13&px=&pid=mm_30925699_85950268_15983200451&dluid=&do=Newcat&m=tiger_newhu">家电</a></li>
+								<li><a href="./index.php?i=14&c=entry&type=14&px=&pid=mm_30925699_85950268_15983200451&dluid=&do=Newcat&m=tiger_newhu">其它</a></li>
+							</ul>
+						</div>
+						<h3 class="tit"><em>选择分类</em></h3>
+					</div>
+				</div>
+				<!-- 展开菜单 -->
+				<!-- <div class="wp"> -->
+					<div class="chc-box">
+						<div class="mask"></div>
+						<ul class="ul-ht2">
+							<li>
+								<a href="./index.php?i=14&c=entry&type=1&px=&pid=mm_30925699_85950268_15983200451&dluid=&do=Newcat&m=tiger_newhu">
+									<i style="background-image: url(http://cs.tigertaoke.com/addons/tiger_newhu/template/mobile/tbgoods/style99/imgs/fl/1nvzhuang.png);"></i>
+									<span>女装</span>
+								</a>
+							</li>
+							<li>
+								<a href="./index.php?i=14&c=entry&type=2&px=&pid=mm_30925699_85950268_15983200451&dluid=&do=Newcat&m=tiger_newhu">
+									<i style="background-image: url(http://cs.tigertaoke.com/addons/tiger_newhu/template/mobile/tbgoods/style99/imgs/fl/2nanzhuang.png);"></i>
+									<span>男装</span>
+								</a>
+							</li>
+							<li>
+								<a href="./index.php?i=14&c=entry&type=3&px=&pid=mm_30925699_85950268_15983200451&dluid=&do=Newcat&m=tiger_newhu">
+									<i style="background-image: url(http://cs.tigertaoke.com/addons/tiger_newhu/template/mobile/tbgoods/style99/imgs/fl/3neiyi.png);"></i>
+									<span>内衣</span>
+								</a>
+							</li>
+							<li>
+								<a href="./index.php?i=14&c=entry&type=4&px=&pid=mm_30925699_85950268_15983200451&dluid=&do=Newcat&m=tiger_newhu">
+									<i style="background-image: url(http://cs.tigertaoke.com/addons/tiger_newhu/template/mobile/tbgoods/style99/imgs/fl/4meizhuang.png);"></i>
+									<span>美妆</span>
+								</a>
+							</li>
+							<li>
+								<a href="./index.php?i=14&c=entry&type=5&px=&pid=mm_30925699_85950268_15983200451&dluid=&do=Newcat&m=tiger_newhu">
+									<i style="background-image: url(http://cs.tigertaoke.com/addons/tiger_newhu/template/mobile/tbgoods/style99/imgs/fl/5peishi.png);"></i>
+									<span>配饰</span>
+								</a>
+							</li>
+							<li>
+								<a href="./index.php?i=14&c=entry&type=6&px=&pid=mm_30925699_85950268_15983200451&dluid=&do=Newcat&m=tiger_newhu">
+									<i style="background-image: url(http://cs.tigertaoke.com/addons/tiger_newhu/template/mobile/tbgoods/style99/imgs/fl/6xieping.png);"></i>
+									<span>鞋品</span>
+								</a>
+							</li>
+							<li>
+								<a href="./index.php?i=14&c=entry&type=7&px=&pid=mm_30925699_85950268_15983200451&dluid=&do=Newcat&m=tiger_newhu">
+									<i style="background-image: url(http://cs.tigertaoke.com/addons/tiger_newhu/template/mobile/tbgoods/style99/imgs/fl/7xiangbao.png);"></i>
+									<span>箱包</span>
+								</a>
+							</li>
+							<li>
+								<a href="./index.php?i=14&c=entry&type=8&px=&pid=mm_30925699_85950268_15983200451&dluid=&do=Newcat&m=tiger_newhu">
+									<i style="background-image: url(http://cs.tigertaoke.com/addons/tiger_newhu/template/mobile/tbgoods/style99/imgs/fl/8ertong.png);"></i>
+									<span>儿童</span>
+								</a>
+							</li>
+							<li>
+								<a href="./index.php?i=14&c=entry&type=9&px=&pid=mm_30925699_85950268_15983200451&dluid=&do=Newcat&m=tiger_newhu">
+									<i style="background-image: url(http://cs.tigertaoke.com/addons/tiger_newhu/template/mobile/tbgoods/style99/imgs/fl/9muying.png);"></i>
+									<span>母婴</span>
+								</a>
+							</li>
+							<li>
+								<a href="./index.php?i=14&c=entry&type=10&px=&pid=mm_30925699_85950268_15983200451&dluid=&do=Newcat&m=tiger_newhu">
+									<i style="background-image: url(http://cs.tigertaoke.com/addons/tiger_newhu/template/mobile/tbgoods/style99/imgs/fl/10jujia.png);"></i>
+									<span>居家</span>
+								</a>
+							</li>
+							<li>
+								<a href="./index.php?i=14&c=entry&type=11&px=&pid=mm_30925699_85950268_15983200451&dluid=&do=Newcat&m=tiger_newhu">
+									<i style="background-image: url(http://cs.tigertaoke.com/addons/tiger_newhu/template/mobile/tbgoods/style99/imgs/fl/11meishi.png);"></i>
+									<span>美食</span>
+								</a>
+							</li>
+							<li>
+								<a href="./index.php?i=14&c=entry&type=12&px=&pid=mm_30925699_85950268_15983200451&dluid=&do=Newcat&m=tiger_newhu">
+									<i style="background-image: url(http://cs.tigertaoke.com/addons/tiger_newhu/template/mobile/tbgoods/style99/imgs/fl/12shuma.png);"></i>
+									<span>数码</span>
+								</a>
+							</li>
+							<li>
+								<a href="./index.php?i=14&c=entry&type=13&px=&pid=mm_30925699_85950268_15983200451&dluid=&do=Newcat&m=tiger_newhu">
+									<i style="background-image: url(http://cs.tigertaoke.com/addons/tiger_newhu/template/mobile/tbgoods/style99/imgs/fl/13jiadian.png);"></i>
+									<span>家电</span>
+								</a>
+							</li>
+							<li>
+								<a href="./index.php?i=14&c=entry&type=14&px=&pid=mm_30925699_85950268_15983200451&dluid=&do=Newcat&m=tiger_newhu">
+									<i style="background-image: url(http://cs.tigertaoke.com/addons/tiger_newhu/template/mobile/tbgoods/style99/imgs/fl/14qita.png);"></i>
+									<span>其它</span>
+								</a>
+							</li>
+						</ul>
+						<a href="javascript:;" class="a-close">
+							<img src="http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/images/a-close.png" alt="">
+						</a>
+					</div>
+					<!-- </div> -->
+					<!-- banner -->
+					<div class="wp">
+						<div class="h-ban2">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="pic">
+										<a href="http://r0hgk.cn/app/index.php?i=14&c=entry&do=index&m=tiger_newhu&pid=mm_30925699_85950268_15983200451&dluid="><img src="https://img.tigertaoke.com/images/14/2019/01/T5cYNghh7N9gspX111YNRxcNz4U1fp.jpg" /></a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="pic">
+										<a href="http://r0hgk.cn/app/index.php?i=14&c=entry&do=index&m=tiger_newhu&pid=mm_30925699_85950268_15983200451&dluid="><img src="https://img.tigertaoke.com/images/14/2019/01/bBh9M6bM0H99FhA9Bnm3a6bBB9KxbZ.jpg" /></a>
+									</div>
+								</div>
+							</div>
+							<!-- Add Pagination -->
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+				</div>
+				<!-- 图标列 -->
+				<div class="row-h2">
+					<ul class="ul-ht3">
+						<li>
+							<a href="http://r0hgk.cn/app/index.php?i=14&c=entry&hd=1&do=newcat&m=tiger_newhu&pid=mm_30925699_85950268_15983200451&dluid=">
+								<i style="background-image: url(https://img.tigertaoke.com/images/14/2019/01/JS9777L7GZ2JX2L07lLmZqZy0QXyQQ.png);"></i>
+								<span>聚优惠</span>
+							</a>
+						</li>
+						<li>
+							<a href="http://r0hgk.cn/app/index.php?i=14&c=entry&do=ddq&m=tiger_newhu&pid=mm_30925699_85950268_15983200451&dluid=">
+								<i style="background-image: url(https://img.tigertaoke.com/images/14/2019/01/ttb598wg543ZZ388YG8ew88812948g.png);"></i>
+								<span>叮咚抢</span>
+							</a>
+						</li>
+						<li>
+							<a href="http://r0hgk.cn/app/index.php?i=14&c=entry&do=jdindex&m=tiger_newhu/app/index.php?i=14&c=entry&do=haoquan&m=tiger_newhu&pid=mm_30925699_85950268_15983200451&dluid=">
+								<i style="background-image: url(https://img.tigertaoke.com/images/14/2019/01/y8uwEDd1WFxqF3xA8WHQdueA1w8eT2.png);"></i>
+								<span>好券直播</span>
+							</a>
+						</li>
+						<li>
+							<a href="http://r0hgk.cn/app/index.php?i=14&c=entry&price2=9.9&do=newcat&m=tiger_newhu&pid=mm_30925699_85950268_15983200451&dluid=">
+								<i style="background-image: url(https://img.tigertaoke.com/images/14/2019/01/rUT0YTNi0n2uvK9innOY8RDuZ9v0t9.png);"></i>
+								<span>9.9</span>
+							</a>
+						</li>
+						<li>
+							<a href="http://r0hgk.cn/app/index.php?i=14&c=entry&hd=2&do=newcat&m=tiger_newhu&pid=mm_30925699_85950268_15983200451&dluid=">
+								<i style="background-image: url(https://img.tigertaoke.com/images/14/2019/01/pJ8uy8IpK8BPPGg8Ng8tJt8GHf3U8t.png);"></i>
+								<span>折上折</span>
+							</a>
+						</li>
+
+					</ul>
+				</div>
+				<!-- 公告 -->
+				<div class="row-h3">
+					<div class="m-ht3">
+						<div class="lb" style="background-image: url(http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/images/lb.png)"></div>
+						<div class="swiper-pub">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a href="./index.php?i=14&c=entry&id=11&do=newsview&m=tiger_newhu" class="txt">测试公告</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 专题分区 -->
+				<div class="row-h4">
+					<ul class="ul-ht4">
+						<li>
+							<div class="con">
+								<a href="./index.php?i=14&c=entry&do=muying&m=tiger_newhu">
+									<div class="txt">
+										<span>母婴专区</span>
+										<em>全球母婴好货精选</em>
+									</div>
+									<div class="pic"><img src="http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/images/hq1.png" alt=""></div>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="con">
+								<a href="./index.php?i=14&c=entry&hd=5&do=newcat&m=tiger_newhu">
+									<div class="txt">
+										<span>边买边看</span>
+										<em>触手可及的感觉</em>
+									</div>
+									<div class="pic"><img src="http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/images/hq2.png" alt=""></div>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="con">
+								<a href="./index.php?i=14&c=entry&do=tbpt&m=tiger_newhu">
+									<div class="txt">
+										<span>拼团好货</span>
+										<em>每日购物更省心</em>
+									</div>
+									<div class="pic"><img src="http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/images/hq3.png" alt=""></div>
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- 中部广告 -->
+				<div class="row-h5" style="background-image: url(https://img.tigertaoke.com/images/14/2019/02/BXCG5mX6ZF5mXt56Rkmzb56M5r365F.jpg">
+					<a href="http://r0hgk.cn/app/index.php?i=14&c=entry&type=11&do=newcat&m=tiger_newhu&pid=mm_30925699_85950268_15983200451&,dluid="></a>
+				</div>
+				<!-- 四个分类 -->
+				<div class="row-h6">
+					<ul class="ul-ht5">
+						<li class="li1">
+							<div class="con">
+								<a href="./index.php?i=14&c=entry&price2=9.9&pid=mm_30925699_85950268_15983200451&dluid=&do=newcat&m=tiger_newhu">
+									<div class="txt">
+										<em>9.9包邮</em>
+										<span>省钱不只是一点点</span>
+									</div>
+									<div class="pic1">
+										<img src="http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/images/hf1.jpg" alt="">
+									</div>
+									<div class="pic2">
+										<img src="http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/images/hf2.jpg" alt="">
+									</div>
+								</a>
+							</div>
+						</li>
+						<li class="li2">
+							<div class="con">
+								<a href="./index.php?i=14&c=entry&hd=3&pid=mm_30925699_85950268_15983200451&dluid=&do=newcat&m=tiger_newhu">
+									<div class="txt">
+										<em>限时抢购</em>
+										<span>限时限量</span>
+									</div>
+									<div class="pic1">
+										<img src="http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/images/hf3.jpg" alt="">
+									</div>
+									<div class="pic2">
+										<img src="http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/images/hf4.jpg" alt="">
+									</div>
+								</a>
+							</div>
+						</li>
+						<li class="li3">
+							<div class="con">
+								<a href="./index.php?i=14&c=entry&hd=2&pid=mm_30925699_85950268_15983200451&dluid=&do=newcat&m=tiger_newhu">
+									<div class="txt">
+										<em>淘好货</em>
+										<span>低价让利促销</span>
+									</div>
+									<div class="pic1">
+										<img src="http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/images/hf5.jpg" alt="">
+									</div>
+									<div class="pic2">
+										<img src="http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/images/hf6.jpg" alt="">
+									</div>
+								</a>
+							</div>
+						</li>
+						<li class="li4">
+							<div class="con">
+								<a href="./index.php?i=14&c=entry&hd=1&pid=mm_30925699_85950268_15983200451&dluid=&do=newcat&m=tiger_newhu">
+									<div class="txt">
+										<em>聚实惠</em>
+										<span>好品味从挑剔开始</span>
+									</div>
+									<div class="pic1">
+										<img src="http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/images/hf7.jpg" alt="">
+									</div>
+									<div class="pic2">
+										<img src="http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/images/hf8.jpg" alt="">
+									</div>
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- 情报局 -->
+        <!-- <div class="row-h7">
+            <div class="m-ht4">
+                <div class="tit-idx">
+                    <a href="" class="more">查看全部<i></i></a>
+                    <h3 style="background-image: url(http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/images/bg1.png);">情报局</h3>
+                </div>
+                <ul class="ul-ht6">
+                    <li>
+                        <div class="con">
+                            <div class="pic">
+                                <a href="">
+                                    <img src="http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/images/hp1.jpg" alt="">
+                                    <span>神价格</span>
+                                </a>
+                            </div>
+                            <div class="txt">
+                                <h4 class="tit"><a href="">【天^猫^超市】·1分钱得好物</a></h4>
+                                <span>傍身好物</span>
+                                <div class="date">天猫 12-22</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="con">
+                            <div class="pic">
+                                <a href="">
+                                    <img src="http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/images/hp1.jpg" alt="">
+                                    <span>精选</span>
+                                </a>
+                            </div>
+                            <div class="txt">
+                                <h4 class="tit"><a href="">【天^猫^超市】 今日-包邮款</a></h4>
+                                <span>下单前 请搭配神券无门槛券</span>
+                                <div class="date">天猫 12-22</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div> -->
+
+        <!-- 今日值得买 -->
+        <div class="row-h8">
+        	<div class="wp">
+        		<div class="m-ht5">
+        			<div class="tit" style="background-image: url(http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/images/bg2.png);">
+        				<em>今日值得买，</em>
+        				<span>限时抢购中</span>
+        				<i style="background-image: url(http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/images/clock.png);"></i>
+        			</div>
+        			<div class="swiper-buy">
+        				<div class="swiper-wrapper">
+
+        					<div class="swiper-slide">
+        						<div class="pic"><a href="./index.php?i=14&c=entry&itemid=583616680334&lm=2&pid=mm_30925699_85950268_15983200451&dluid=&do=view&m=tiger_newhu"><img src="https://img.alicdn.com/imgextra/i4/3395532365/O1CN0191HzdI1TLDBUjIIW7_!!3395532365.jpg_200x200.jpg" alt=""></a></div>
+        						<div class="txt">
+        							<h3 class="tit">植物去除螨虫贴床上除螨虫垫家用除螨喷雾祛螨虫神器除螨包日本</h3>
+        							<span>券后￥19.90</span>
+        							<div class="quan">
+        								<em style="background-image: url(http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/images/hi7.png);">券10</em>
+        								<span>已售10580</span>
+        							</div>
+        						</div>
+        					</div>
+
+
+        					<div class="swiper-slide">
+        						<div class="pic"><a href="./index.php?i=14&c=entry&itemid=580856479590&lm=2&pid=mm_30925699_85950268_15983200451&dluid=&do=view&m=tiger_newhu"><img src="http://img.alicdn.com/imgextra/i3/2144560736/O1CN01trxz5v1HJ7zwnMcGz_!!2144560736.jpg_200x200.jpg" alt=""></a></div>
+        						<div class="txt">
+        							<h3 class="tit">竹炭牙刷软毛成人款家用男女士10支小头抑菌软毛牙刷批发家庭套装</h3>
+        							<span>券后￥14.90</span>
+        							<div class="quan">
+        								<em style="background-image: url(http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/images/hi7.png);">券5</em>
+        								<span>已售77</span>
+        							</div>
+        						</div>
+        					</div>
+
+
+        					<div class="swiper-slide">
+        						<div class="pic"><a href="./index.php?i=14&c=entry&itemid=564173479441&lm=2&pid=mm_30925699_85950268_15983200451&dluid=&do=view&m=tiger_newhu"><img src="http://img.alicdn.com/imgextra/i4/508190217/O1CN011DTQOTTfiPvhLB7_!!508190217.jpg_200x200.jpg" alt=""></a></div>
+        						<div class="txt">
+        							<h3 class="tit">红枣桂圆枸杞茶红枣茶干袋装女人泡水果喝的饮品枸杞八宝组合花茶</h3>
+        							<span>券后￥19.80</span>
+        							<div class="quan">
+        								<em style="background-image: url(http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/images/hi7.png);">券10</em>
+        								<span>已售549</span>
+        							</div>
+        						</div>
+        					</div>
+
+
+        					<div class="swiper-slide">
+        						<div class="pic"><a href="./index.php?i=14&c=entry&itemid=580402624361&lm=2&pid=mm_30925699_85950268_15983200451&dluid=&do=view&m=tiger_newhu"><img src="http://img.alicdn.com/imgextra/i3/2991102209/O1CN014WI9dL1SBlOfiR5DF_!!2991102209.jpg_200x200.jpg" alt=""></a></div>
+        						<div class="txt">
+        							<h3 class="tit">纽汁取全脂新西兰进口女士早餐学生奶粉青少年高钙无蔗糖中老年奶</h3>
+        							<span>券后￥79.90</span>
+        							<div class="quan">
+        								<em style="background-image: url(http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/images/hi7.png);">券40</em>
+        								<span>已售126</span>
+        							</div>
+        						</div>
+        					</div>
+
+
+        					<div class="swiper-slide">
+        						<div class="pic"><a href="./index.php?i=14&c=entry&itemid=44164766029&lm=2&pid=mm_30925699_85950268_15983200451&dluid=&do=view&m=tiger_newhu"><img src="https://img.alicdn.com/imgextra/i2/35115354/O1CN01hrQYtp1pQB1YEfBvI_!!35115354.jpg_200x200.jpg" alt=""></a></div>
+        						<div class="txt">
+        							<h3 class="tit">新款泳衣女裙式连体钢托小胸聚拢遮肚显瘦保守分体大码温泉游泳装</h3>
+        							<span>券后￥68.00</span>
+        							<div class="quan">
+        								<em style="background-image: url(http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/images/hi7.png);">券30</em>
+        								<span>已售521</span>
+        							</div>
+        						</div>
+        					</div>
+
+
+        					<div class="swiper-slide">
+        						<div class="pic"><a href="./index.php?i=14&c=entry&itemid=570991449736&lm=2&pid=mm_30925699_85950268_15983200451&dluid=&do=view&m=tiger_newhu"><img src="http://img.alicdn.com/imgextra/i3/2524819982/O1CN012NbnzMaDlY0SufA_!!2524819982.jpg_200x200.jpg" alt=""></a></div>
+        						<div class="txt">
+        							<h3 class="tit">冬季秋衣秋裤男士套装加绒薄款弹力大码修身情侣女士发热保暖内衣</h3>
+        							<span>券后￥39.80</span>
+        							<div class="quan">
+        								<em style="background-image: url(http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/images/hi7.png);">券20</em>
+        								<span>已售35</span>
+        							</div>
+        						</div>
+        					</div>
+
+
+        					<div class="swiper-slide">
+        						<div class="pic"><a href="./index.php?i=14&c=entry&itemid=524608066606&lm=2&pid=mm_30925699_85950268_15983200451&dluid=&do=view&m=tiger_newhu"><img src="http://img.alicdn.com/imgextra/i1/752988509/O1CN012CjAaZUZV9ISRbF_!!752988509.jpg_200x200.jpg" alt=""></a></div>
+        						<div class="txt">
+        							<h3 class="tit">骆驼全自动帐篷户外3-4人野营加厚防雨2人防暴雨双人野外露营帐篷</h3>
+        							<span>券后￥119.00</span>
+        							<div class="quan">
+        								<em style="background-image: url(http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/images/hi7.png);">券60</em>
+        								<span>已售2156</span>
+        							</div>
+        						</div>
+        					</div>
+
+
+        					<div class="swiper-slide">
+        						<div class="pic"><a href="./index.php?i=14&c=entry&itemid=583033424624&lm=2&pid=mm_30925699_85950268_15983200451&dluid=&do=view&m=tiger_newhu"><img src="http://img.alicdn.com/imgextra/i4/1690435617/O1CN01JSwAlZ1rMdBQySZMn_!!1690435617.jpg_200x200.jpg" alt=""></a></div>
+        						<div class="txt">
+        							<h3 class="tit">2019新款潮亲子装春装卫衣外套母一家三口四口母子母女装连帽加绒</h3>
+        							<span>券后￥44.90</span>
+        							<div class="quan">
+        								<em style="background-image: url(http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/images/hi7.png);">券15</em>
+        								<span>已售25</span>
+        							</div>
+        						</div>
+        					</div>
+
+
+        					<div class="swiper-slide">
+        						<div class="pic"><a href="./index.php?i=14&c=entry&itemid=585522527165&lm=2&pid=mm_30925699_85950268_15983200451&dluid=&do=view&m=tiger_newhu"><img src="http://img.alicdn.com/imgextra/i3/3350692135/O1CN017SKjwf1Rds5gyvNpq_!!3350692135.jpg_200x200.jpg" alt=""></a></div>
+        						<div class="txt">
+        							<h3 class="tit">海福盛上海葱油拌面泡面袋装5连包335g非油炸冻干面方便速食夜宵</h3>
+        							<span>券后￥22.90</span>
+        							<div class="quan">
+        								<em style="background-image: url(http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/images/hi7.png);">券10</em>
+        								<span>已售81</span>
+        							</div>
+        						</div>
+        					</div>
+
+
+        					<div class="swiper-slide">
+        						<div class="pic"><a href="./index.php?i=14&c=entry&itemid=553221830219&lm=2&pid=mm_30925699_85950268_15983200451&dluid=&do=view&m=tiger_newhu"><img src="https://img.alicdn.com/imgextra/i1/1078836685/O1CN013e5ccy1zFmCgNFKDn_!!1078836685.jpg_200x200.jpg" alt=""></a></div>
+        						<div class="txt">
+        							<h3 class="tit">哺乳文胸罩防下垂怀孕期孕妇内衣喂奶上托春夏产后聚拢有型无钢圈</h3>
+        							<span>券后￥38.00</span>
+        							<div class="quan">
+        								<em style="background-image: url(http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/images/hi7.png);">券60</em>
+        								<span>已售979</span>
+        							</div>
+        						</div>
+        					</div>
+
+
+        					<div class="swiper-slide">
+        						<div class="pic"><a href="./index.php?i=14&c=entry&itemid=582110849929&lm=2&pid=mm_30925699_85950268_15983200451&dluid=&do=view&m=tiger_newhu"><img src="http://img.alicdn.com/imgextra/i1/3867700743/O1CN01JC7bko1HMKm2FFWHj_!!3867700743.jpg_200x200.jpg" alt=""></a></div>
+        						<div class="txt">
+        							<h3 class="tit">女童运动鞋子2019春季运动儿童白色童鞋男童小白鞋儿童鞋子女童鞋</h3>
+        							<span>券后￥29.90</span>
+        							<div class="quan">
+        								<em style="background-image: url(http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/images/hi7.png);">券40</em>
+        								<span>已售302</span>
+        							</div>
+        						</div>
+        					</div>
+
+
+        					<div class="swiper-slide">
+        						<div class="pic"><a href="./index.php?i=14&c=entry&itemid=587504400538&lm=2&pid=mm_30925699_85950268_15983200451&dluid=&do=view&m=tiger_newhu"><img src="http://img.alicdn.com/imgextra/i3/2185995555/O1CN01HhdMIs1quEe3m5R4m_!!2185995555.jpg_200x200.jpg" alt=""></a></div>
+        						<div class="txt">
+        							<h3 class="tit">2019春装新款韩版高腰九分休闲裤女松紧系带不规则小脚直筒哈伦裤</h3>
+        							<span>券后￥49.90</span>
+        							<div class="quan">
+        								<em style="background-image: url(http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/images/hi7.png);">券50</em>
+        								<span>已售167</span>
+        							</div>
+        						</div>
+        					</div>
+
+
+        					<div class="swiper-slide">
+        						<div class="pic"><a href="./index.php?i=14&c=entry&itemid=584318630477&lm=2&pid=mm_30925699_85950268_15983200451&dluid=&do=view&m=tiger_newhu"><img src="https://img.alicdn.com/imgextra/i1/3376949283/O1CN017mXERi2IRfAHFPXpZ_!!3376949283.jpg_200x200.jpg" alt=""></a></div>
+        						<div class="txt">
+        							<h3 class="tit">诺态少女空间卫生巾棉柔日用护垫组合4包装120片超薄无感舒适</h3>
+        							<span>券后￥19.90</span>
+        							<div class="quan">
+        								<em style="background-image: url(http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/images/hi7.png);">券20</em>
+        								<span>已售321</span>
+        							</div>
+        						</div>
+        					</div>
+
+
+        					<div class="swiper-slide">
+        						<div class="pic"><a href="./index.php?i=14&c=entry&itemid=587331755877&lm=2&pid=mm_30925699_85950268_15983200451&dluid=&do=view&m=tiger_newhu"><img src="https://img.alicdn.com/imgextra/i1/1654050000/O1CN01dfcPTH1Bs2VM1Hv74_!!1654050000.png_200x200.jpg" alt=""></a></div>
+        						<div class="txt">
+        							<h3 class="tit">网红GM墨镜女韩版潮ins偏光太阳镜男19新款近视防紫外线街拍圆脸</h3>
+        							<span>券后￥9.90</span>
+        							<div class="quan">
+        								<em style="background-image: url(http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/images/hi7.png);">券50</em>
+        								<span>已售2597</span>
+        							</div>
+        						</div>
+        					</div>
+
+
+        					<div class="swiper-slide">
+        						<div class="pic"><a href="./index.php?i=14&c=entry&itemid=578005618775&lm=2&pid=mm_30925699_85950268_15983200451&dluid=&do=view&m=tiger_newhu"><img src="https://img.alicdn.com/imgextra/i1/3998873690/O1CN011d83wh8aUCVAdwc_!!3998873690.jpg_200x200.jpg" alt=""></a></div>
+        						<div class="txt">
+        							<h3 class="tit">胸包男斜挎包韩版休闲单肩包潮流男包运动小背包青年挎包</h3>
+        							<span>券后￥29.90</span>
+        							<div class="quan">
+        								<em style="background-image: url(http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/images/hi7.png);">券100</em>
+        								<span>已售23</span>
+        							</div>
+        						</div>
+        					</div>
+
+
+        					<div class="swiper-slide">
+        						<div class="pic"><a href="./index.php?i=14&c=entry&itemid=577711420244&lm=2&pid=mm_30925699_85950268_15983200451&dluid=&do=view&m=tiger_newhu"><img src="https://img.alicdn.com/imgextra/i4/3998873690/TB2KtG1cXYqK1RjSZLeXXbXppXa_!!3998873690.jpg_200x200.jpg" alt=""></a></div>
+        						<div class="txt">
+        							<h3 class="tit">包包男士胸包男式斜跨包帆布斜挎包男包单肩包小背包挂包休闲腰包</h3>
+        							<span>券后￥32.90</span>
+        							<div class="quan">
+        								<em style="background-image: url(http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/images/hi7.png);">券100</em>
+        								<span>已售62</span>
+        							</div>
+        						</div>
+        					</div>
+
+
+        					<div class="swiper-slide">
+        						<div class="pic"><a href="./index.php?i=14&c=entry&itemid=577714100487&lm=2&pid=mm_30925699_85950268_15983200451&dluid=&do=view&m=tiger_newhu"><img src="https://img.alicdn.com/imgextra/i4/3998873690/TB2Hf19cmzqK1RjSZPcXXbTepXa_!!3998873690.jpg_200x200.jpg" alt=""></a></div>
+        						<div class="txt">
+        							<h3 class="tit">胸包软皮PU男韩版潮男包单肩包挎包休闲小背包斜挎包男士包包肩包</h3>
+        							<span>券后￥34.90</span>
+        							<div class="quan">
+        								<em style="background-image: url(http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/images/hi7.png);">券100</em>
+        								<span>已售73</span>
+        							</div>
+        						</div>
+        					</div>
+
+
+        					<div class="swiper-slide">
+        						<div class="pic"><a href="./index.php?i=14&c=entry&itemid=577880941859&lm=2&pid=mm_30925699_85950268_15983200451&dluid=&do=view&m=tiger_newhu"><img src="https://img.alicdn.com/imgextra/i4/3998873690/O1CN011d83wdU0Ksl0dGl_!!3998873690.jpg_200x200.jpg" alt=""></a></div>
+        						<div class="txt">
+        							<h3 class="tit">2018新款男士胸包帆布休闲斜挎包韩版潮牛津布单肩包男斜跨胸前包</h3>
+        							<span>券后￥29.90</span>
+        							<div class="quan">
+        								<em style="background-image: url(http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/images/hi7.png);">券100</em>
+        								<span>已售221</span>
+        							</div>
+        						</div>
+        					</div>
+
+
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+        <!-- 边买边看 -->
+        <div class="row-h9">
+        	<div class="tit-idx">
+        		<a href="./index.php?i=14&c=entry&hd=5&lm=2&pid=mm_30925699_85950268_15983200451&dluid=&do=newcat&m=tiger_newhu" class="more">查看全部<i></i></a>
+        		<h3 style="background-image: url(http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/images/bg3.png);">边买边看</h3>
+        	</div>
+        	<div class="swiper-z1">
+        		<ul class="ul-ht7 swiper-wrapper">
+        			<li class="swiper-slide">
+        				<a href="./index.php?i=14&c=entry&itemid=568436005391&lm=2&pid=mm_30925699_85950268_15983200451&dluid=&do=view&m=tiger_newhu">
+        					<div class="pic">
+        						<img src="http://img.alicdn.com/imgextra/i2/689605907/TB2rVQcn1uSBuNjSsziXXbq8pXa_!!689605907.jpg_200x200.jpg" alt="">
+        						<div class="tips">
+        						券￥10                                </div>
+        					</div>
+        					<div class="txt">
+        						<h3 class="tit">正品碧素堂蜗牛精华原液面膜美白补水保湿蚕丝淡斑祛痘睡眠面膜女</h3>
+        						<div class="pric">
+        							<span>券后￥19.90</span>
+        							<em>￥29.90</em>
+        						</div>
+        					</div>
+        				</a>
+        			</li>
+        			<li class="swiper-slide">
+        				<a href="./index.php?i=14&c=entry&itemid=569937862509&lm=2&pid=mm_30925699_85950268_15983200451&dluid=&do=view&m=tiger_newhu">
+        					<div class="pic">
+        						<img src="http://img.haodanku.com/oimg_569937862509_1539481016.jpg_200x200.jpg" alt="">
+        						<div class="tips">
+        						券￥30                                </div>
+        					</div>
+        					<div class="txt">
+        						<h3 class="tit">婴儿推车轻便避震折叠便携式可坐可躺推车</h3>
+        						<div class="pric">
+        							<span>券后￥168.00</span>
+        							<em>￥198.00</em>
+        						</div>
+        					</div>
+        				</a>
+        			</li>
+        			<li class="swiper-slide">
+        				<a href="./index.php?i=14&c=entry&itemid=44067844465&lm=2&pid=mm_30925699_85950268_15983200451&dluid=&do=view&m=tiger_newhu">
+        					<div class="pic">
+        						<img src="http://img.alicdn.com/imgextra/i4/2150993006/TB2Y8jRv_CWBKNjSZFtXXaC3FXa_!!2150993006.jpg_200x200.jpg" alt="">
+        						<div class="tips">
+        						券￥20                                </div>
+        					</div>
+        					<div class="txt">
+        						<h3 class="tit">秋冬款男裤子中年男士休闲裤直筒宽松中老年爸爸装长裤工装裤男</h3>
+        						<div class="pric">
+        							<span>券后￥39.00</span>
+        							<em>￥59.00</em>
+        						</div>
+        					</div>
+        				</a>
+        			</li>
+        			<li class="swiper-slide">
+        				<a href="./index.php?i=14&c=entry&itemid=572287660516&lm=2&pid=mm_30925699_85950268_15983200451&dluid=&do=view&m=tiger_newhu">
+        					<div class="pic">
+        						<img src="http://img.alicdn.com/imgextra/i2/215965923/TB2pE4EAwmTBuNjy1XbXXaMrVXa_!!215965923.jpg_200x200.jpg" alt="">
+        						<div class="tips">
+        						券￥30                                </div>
+        					</div>
+        					<div class="txt">
+        						<h3 class="tit">电饼铛博饼铛春饼机博饼机薄饼机春卷皮家用小型速热饼锅烙饼</h3>
+        						<div class="pric">
+        							<span>券后￥39.00</span>
+        							<em>￥69.00</em>
+        						</div>
+        					</div>
+        				</a>
+        			</li>
+        			<li class="swiper-slide">
+        				<a href="./index.php?i=14&c=entry&itemid=560508305162&lm=2&pid=mm_30925699_85950268_15983200451&dluid=&do=view&m=tiger_newhu">
+        					<div class="pic">
+        						<img src="http://img.haodanku.com/oimg_560508305162_1544630797.jpg_200x200.jpg" alt="">
+        						<div class="tips">
+        						券￥5                                </div>
+        					</div>
+        					<div class="txt">
+        						<h3 class="tit">博富家日式304不锈钢保温饭盒双层2分格学生长方形便当盒儿童餐盒</h3>
+        						<div class="pric">
+        							<span>券后￥19.90</span>
+        							<em>￥24.90</em>
+        						</div>
+        					</div>
+        				</a>
+        			</li>
+        			<li class="swiper-slide">
+        				<a href="./index.php?i=14&c=entry&itemid=564868198064&lm=2&pid=mm_30925699_85950268_15983200451&dluid=&do=view&m=tiger_newhu">
+        					<div class="pic">
+        						<img src="http://img.alicdn.com/imgextra/i4/44662344/TB20ARxXnCWBKNjSZFtXXaC3FXa_!!44662344.jpg_200x200.jpg" alt="">
+        						<div class="tips">
+        						券￥5                                </div>
+        					</div>
+        					<div class="txt">
+        						<h3 class="tit">水雾神奇魔法珠儿童创意制作手工diy男女孩玩具水露魔珠水粘拼豆</h3>
+        						<div class="pric">
+        							<span>券后￥14.90</span>
+        							<em>￥19.90</em>
+        						</div>
+        					</div>
+        				</a>
+        			</li>
+        			<li class="swiper-slide">
+        				<a href="./index.php?i=14&c=entry&itemid=580744908728&lm=2&pid=mm_30925699_85950268_15983200451&dluid=&do=view&m=tiger_newhu">
+        					<div class="pic">
+        						<img src="http://img.alicdn.com/imgextra/i3/2609853541/O1CN011c1ow68A2BTqupY_!!2609853541.jpg_200x200.jpg" alt="">
+        						<div class="tips">
+        						券￥30                                </div>
+        					</div>
+        					<div class="txt">
+        						<h3 class="tit">彩色定时创意排插家用多功能充电源插座带USB宿舍学生插座转换器</h3>
+        						<div class="pric">
+        							<span>券后￥19.90</span>
+        							<em>￥49.90</em>
+        						</div>
+        					</div>
+        				</a>
+        			</li>
+        			<li class="swiper-slide">
+        				<a href="./index.php?i=14&c=entry&itemid=575361713212&lm=2&pid=mm_30925699_85950268_15983200451&dluid=&do=view&m=tiger_newhu">
+        					<div class="pic">
+        						<img src="http://img.alicdn.com/imgextra/i1/3868350408/O1CN011Esu375BeZFOURW_!!3868350408.jpg_200x200.jpg" alt="">
+        						<div class="tips">
+        						券￥30                                </div>
+        					</div>
+        					<div class="txt">
+        						<h3 class="tit">橄榄油护肤精油全身防干裂小C哥保湿进口橄榄油卸妆油全身按摩</h3>
+        						<div class="pric">
+        							<span>券后￥9.90</span>
+        							<em>￥39.90</em>
+        						</div>
+        					</div>
+        				</a>
+        			</li>
+        			<li class="swiper-slide">
+        				<a href="./index.php?i=14&c=entry&itemid=568358924561&lm=2&pid=mm_30925699_85950268_15983200451&dluid=&do=view&m=tiger_newhu">
+        					<div class="pic">
+        						<img src="https://img.alicdn.com/imgextra/i3/1621159062/TB2D1rgeLImBKNjSZFlXXc43FXa_!!1621159062.jpg_200x200.jpg" alt="">
+        						<div class="tips">
+        						券￥3                                </div>
+        					</div>
+        					<div class="txt">
+        						<h3 class="tit">中欧脚蹬拉力器减腰瘦肚子运动仰卧起坐女辅助健身器材家用弹力绳</h3>
+        						<div class="pric">
+        							<span>券后￥16.90</span>
+        							<em>￥19.90</em>
+        						</div>
+        					</div>
+        				</a>
+        			</li>
+        			<li class="swiper-slide">
+        				<a href="./index.php?i=14&c=entry&itemid=528358788577&lm=2&pid=mm_30925699_85950268_15983200451&dluid=&do=view&m=tiger_newhu">
+        					<div class="pic">
+        						<img src="https://gd4.alicdn.com/imgextra/i4/2760262751/TB2104Ap9hlpuFjSspkXXa1ApXa_!!2760262751.jpg_200x200.jpg" alt="">
+        						<div class="tips">
+        						券￥20                                </div>
+        					</div>
+        					<div class="txt">
+        						<h3 class="tit">[买2送1]上卸妆化妆棉双面双层脸部补水省水薄旅行便捷230片包邮</h3>
+        						<div class="pric">
+        							<span>券后￥9.80</span>
+        							<em>￥29.80</em>
+        						</div>
+        					</div>
+        				</a>
+        			</li>
+        			<li class="swiper-slide">
+        				<a href="./index.php?i=14&c=entry&itemid=556294350585&lm=2&pid=mm_30925699_85950268_15983200451&dluid=&do=view&m=tiger_newhu">
+        					<div class="pic">
+        						<img src="http://img.alicdn.com/imgextra/i2/3044776763/TB2ri4Gb67jyKJjy1XaXXblnFXa_!!3044776763.jpg_200x200.jpg" alt="">
+        						<div class="tips">
+        						券￥20                                </div>
+        					</div>
+        					<div class="txt">
+        						<h3 class="tit">飘逸杯泡茶壶功夫器具沏茶玲珑杯 过滤办公室个人便携全玻璃</h3>
+        						<div class="pric">
+        							<span>券后￥19.90</span>
+        							<em>￥39.90</em>
+        						</div>
+        					</div>
+        				</a>
+        			</li>
+        			<li class="swiper-slide">
+        				<a href="./index.php?i=14&c=entry&itemid=565123475970&lm=2&pid=mm_30925699_85950268_15983200451&dluid=&do=view&m=tiger_newhu">
+        					<div class="pic">
+        						<img src="http://img.alicdn.com/imgextra/i4/886478335/TB2M1VyaAyWBuNjy0FpXXassXXa_!!886478335.jpg_200x200.jpg" alt="">
+        						<div class="tips">
+        						券￥30                                </div>
+        					</div>
+        					<div class="txt">
+        						<h3 class="tit">Chigo/志高蒸汽挂烫机 手持家用挂式电熨斗 烫衣熨烫机烫衣机</h3>
+        						<div class="pric">
+        							<span>券后￥139.00</span>
+        							<em>￥169.00</em>
+        						</div>
+        					</div>
+        				</a>
+        			</li>
+        			<li class="swiper-slide">
+        				<a href="./index.php?i=14&c=entry&itemid=584314035131&lm=2&pid=mm_30925699_85950268_15983200451&dluid=&do=view&m=tiger_newhu">
+        					<div class="pic">
+        						<img src="http://img.alicdn.com/imgextra/i2/886478335/O1CN01pzmX0l2BRTh2SgkgZ_!!886478335.jpg_200x200.jpg" alt="">
+        						<div class="tips">
+        						券￥30                                </div>
+        					</div>
+        					<div class="txt">
+        						<h3 class="tit">德国Yuki/优雪养生壶燕窝阿胶炖煮壶电煮茶壶全自动加厚玻璃烧水</h3>
+        						<div class="pric">
+        							<span>券后￥168.00</span>
+        							<em>￥198.00</em>
+        						</div>
+        					</div>
+        				</a>
+        			</li>
+        			<li class="swiper-slide">
+        				<a href="./index.php?i=14&c=entry&itemid=577018430952&lm=2&pid=mm_30925699_85950268_15983200451&dluid=&do=view&m=tiger_newhu">
+        					<div class="pic">
+        						<img src="http://img.alicdn.com/imgextra/i6/TB1w42SLXXXXXboXXXXKCNh.FXX_104927.jpg_200x200.jpg" alt="">
+        						<div class="tips">
+        						券￥100                                </div>
+        					</div>
+        					<div class="txt">
+        						<h3 class="tit">挑战瘦40斤左旋肉碱咖啡粉懒人减肥瘦身燃脂顽固型胶囊排油正品ys</h3>
+        						<div class="pric">
+        							<span>券后￥39.90</span>
+        							<em>￥139.90</em>
+        						</div>
+        					</div>
+        				</a>
+        			</li>
+        			<li class="swiper-slide">
+        				<a href="./index.php?i=14&c=entry&itemid=582174190833&lm=2&pid=mm_30925699_85950268_15983200451&dluid=&do=view&m=tiger_newhu">
+        					<div class="pic">
+        						<img src="https://img.alicdn.com/imgextra/i1/1844654127/O1CN01ocbaAb1gMD3WKGn68_!!1844654127.jpg_200x200.jpg" alt="">
+        						<div class="tips">
+        						券￥10                                </div>
+        					</div>
+        					<div class="txt">
+        						<h3 class="tit">红叶雨伞女晴雨两用韩国创意小清新森系防晒防紫外线遮阳伞小白伞</h3>
+        						<div class="pric">
+        							<span>券后￥19.90</span>
+        							<em>￥29.90</em>
+        						</div>
+        					</div>
+        				</a>
+        			</li>
+        			<li class="swiper-slide">
+        				<a href="./index.php?i=14&c=entry&itemid=553537019140&lm=2&pid=mm_30925699_85950268_15983200451&dluid=&do=view&m=tiger_newhu">
+        					<div class="pic">
+        						<img src="http://img.alicdn.com/imgextra/i3/3044776763/TB2.K4fXsrHK1Jjy1zkXXX.QpXa_!!3044776763.jpg_200x200.jpg" alt="">
+        						<div class="tips">
+        						券￥20                                </div>
+        					</div>
+        					<div class="txt">
+        						<h3 class="tit">飘逸杯泡茶壶便携家用冲茶器过滤按压式玻璃茶具办公室全玻璃</h3>
+        						<div class="pric">
+        							<span>券后￥19.90</span>
+        							<em>￥39.90</em>
+        						</div>
+        					</div>
+        				</a>
+        			</li>
+        			<li class="swiper-slide">
+        				<a href="./index.php?i=14&c=entry&itemid=542679275925&lm=2&pid=mm_30925699_85950268_15983200451&dluid=&do=view&m=tiger_newhu">
+        					<div class="pic">
+        						<img src="https://img.alicdn.com/imgextra/i3/436052124/O1CN011RYph3KLwdhb6Xo_!!436052124.jpg_200x200.jpg" alt="">
+        						<div class="tips">
+        						券￥3                                </div>
+        					</div>
+        					<div class="txt">
+        						<h3 class="tit">博富家日式304不锈钢保温饭盒双层三层2分格学生便当盒儿童餐盒</h3>
+        						<div class="pric">
+        							<span>券后￥11.90</span>
+        							<em>￥14.90</em>
+        						</div>
+        					</div>
+        				</a>
+        			</li>
+        			<li class="swiper-slide">
+        				<a href="./index.php?i=14&c=entry&itemid=536022462362&lm=2&pid=mm_30925699_85950268_15983200451&dluid=&do=view&m=tiger_newhu">
+        					<div class="pic">
+        						<img src="https://img.alicdn.com/imgextra/i3/651599809/O1CN01qWnm4C2MKZV4HPcBz_!!651599809.jpg_200x200.jpg" alt="">
+        						<div class="tips">
+        						券￥20                                </div>
+        					</div>
+        					<div class="txt">
+        						<h3 class="tit">第2件半价【买2送1】全棉卸妆化妆棉厚5层双面双效上妆洁面巾包邮</h3>
+        						<div class="pric">
+        							<span>券后￥9.80</span>
+        							<em>￥29.80</em>
+        						</div>
+        					</div>
+        				</a>
+        			</li>
+        		</ul>
+        	</div>
+        </div>
+        <!-- 全球嗨购 -->
+        <!-- <div class="row-h10">
+            <div class="tit-idx">
+                <a href="" class="more">查看全部<i></i></a>
+                <h3 style="background-image: url(http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/images/bg4.png);">全球嗨购</h3>
+            </div>
+            <div class="swiper-z1">
+                <ul class="ul-ht7 swiper-wrapper">
+                    <li class="swiper-slide">
+                        <a href="">
+                            <div class="pic">
+                                <img src="http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/images/hp1.jpg" alt="">
+                                <div class="tips">
+                                    券￥1000
+                                </div>
+                            </div>
+                            <div class="txt">
+                                <h3 class="tit">西服套装男士三西服套装男士三西服套装男士三西服套装男士三西服套装男士三</h3>
+                                <div class="pric">
+                                    <span>券后￥278.0</span>
+                                    <em>￥338.0</em>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div> -->
+        <!-- 全球狂欢 -->
+<!--        <div class="row-h11">
+            <div class="h-ban3" style="background-image: url(http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/images/hp5.jpg)">
+                <a href=""></a>
+            </div>
+            <div class="swiper-z1">
+                <ul class="ul-ht7 swiper-wrapper">
+                    <li class="swiper-slide">
+                        <a href="">
+                            <div class="pic">
+                                <img src="http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/images/hp1.jpg" alt="">
+                                <div class="tips">
+                                    券￥1000
+                                </div>
+                            </div>
+                            <div class="txt">
+                                <h3 class="tit">西服套装男士三西服套装男士三西服套装男士三西服套装男士三西服套装男士三</h3>
+                                <div class="pric">
+                                    <span>券后￥278.0</span>
+                                    <em>￥338.0</em>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div> -->
+        <!-- 大家都在领 -->
+        <!-- <div class="row-h12">
+            <div class="wp">
+                <div class="m-ht6">
+                    <div class="tit">
+                        <div class="tips"> <span>+242</span> <em>850,654</em>次实时领券</div>
+                        <h3>大家都在领</h3>
+                    </div>
+                    <div class="swiper-z2">
+                        <ul class="ul-ht8 swiper-wrapper">
+                            <li class="swiper-slide">
+                                <a href="">
+                                    <div class="pic">
+                                        <img src="http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/images/hp1.jpg" alt="">
+                                        <div class="tips">
+                                            <span>1.1万人已领</span>
+                                            55元券
+                                        </div>
+                                    </div>
+                                    <div class="txt">
+                                        <h4 class="tit">【麦可酷】无线便携式无线便携式无线便携式无线便携式</h4>
+                                        <div class="pirc">
+                                            <span><sub>￥</sub>54</span>
+                                            <em>￥109</em>
+                                        </div>
+                                    </div>
+                                    <div class="line">
+                                        <i style="width:30%"></i>
+                                    </div>
+                                </a>
+                            </li>
+                     
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- 今日精选好券 -->
+        <div class="row-h13">
+        	<div class="m-ht7" id="table">
+        		<div class="tit">
+        			<i style="background-image: url(http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/images/hi8.png)"></i>
+        			<h3>今日精选好券</h3>
+        			<em>EXPLOSION UPDATE TODAY</em>
+        		</div>
+        		<ul class="ul-ht9">
+        			<li class="on"><a href="./index.php?i=14&c=entry&px=&pid=mm_30925699_85950268_15983200451&dluid=&do=Newcat&m=tiger_newhu">综合</a></li>
+        			<li><a href="./index.php?i=14&c=entry&px=2&pid=mm_30925699_85950268_15983200451&dluid=&do=Newcat&m=tiger_newhu">券后价</a></li>
+        			<li><a href="./index.php?i=14&c=entry&px=1&pid=mm_30925699_85950268_15983200451&dluid=&do=Newcat&m=tiger_newhu">销量</a></li>
+        			<li><a href="./index.php?i=14&c=entry&px=4&pid=mm_30925699_85950268_15983200451&dluid=&do=Newcat&m=tiger_newhu">券额</a></li>
+
+        		</ul>
+
+        		<!-- 样式2 -->
+        		<ul class="ul-quan1" style="background: #f0f0f0;"  id="goods_box">
+        		</ul>
+
+        	</div>
+        </div>
+
+        <!-- 弹窗一按钮 -->
+        <!-- 弹窗2 轮播 -->
+        <div class="swiper-pop" id="lbtx" style="display: none;">
+        	<div class="swiper-wrapper">
+        		<div class="swiper-slide on">
+        			<a href="">
+        				<div class="pic"><img src="https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKMdylic8UUD4wQl5RiaOLnEYh03kI1hic2BogXxlKYVByYGqI1GI01UQdwW1kdhFW5pCtOibqIYibCa5A/132" alt=""></div>
+        				<div class="txt">Star成功领取了100元优惠券一张<span></span></div>
+        			</a>
+        		</div>
+        		<div class="swiper-slide on">
+        			<a href="">
+        				<div class="pic"><img src="https://wx.qlogo.cn/mmopen/vi_32/eMia93Iia35DT0x1tTVOOxFlYOXaeriaQBmJwkbib489ib0PRb3iclJsDVmSzLBdX12VmC8g7CqPOtlHu7S1Fib1QRFkQ/132" alt=""></div>
+        				<div class="txt">颜妈妈奶茶坊成功领取了30元优惠券一张<span></span></div>
+        			</a>
+        		</div>
+        		<div class="swiper-slide on">
+        			<a href="">
+        				<div class="pic"><img src="https://wx.qlogo.cn/mmopen/vi_32/PbLFRZkCJ4LGux8U9mywKJMFNwV62AxEzeP0MnzMAbW8sWbjkEnWAEbNl2Rxn7eDM4vcnUbO6TEbKhOzV4IVtQ/132" alt=""></div>
+        				<div class="txt">杨阳成功领取了50元优惠券一张<span></span></div>
+        			</a>
+        		</div>
+        		<div class="swiper-slide on">
+        			<a href="">
+        				<div class="pic"><img src="http://thirdwx.qlogo.cn/mmopen/0nG262o2hZENnxXCBnxSSNicicHYklURZHIqULOB5hvckay1neLbS2aWenKk1L1fiaNlv9WKzFohwSeMCpFzFPaVkuIdydMvmVz/132" alt=""></div>
+        				<div class="txt">王美鹏成功领取了30元优惠券一张<span></span></div>
+        			</a>
+        		</div>
+
+        	</div>
+        </div>
+
+    </div>
+    
+    <!-- 首页底部 -->
+    <link rel="stylesheet" href="http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/css/footer-idx.css">
+    <!-- 首页底部 end-->
+    <div class="footer-idx">
+    	<div class="fd-nav">
+
+    		<a href="http://r0hgk.cn/app/index.php?i=14&c=entry&do=index&m=tiger_newhu&pid=mm_30925699_85950268_15983200451&dluid=">
+    			<i class="icon1" style="background-image: url(https://img.tigertaoke.com/images/14/2019/01/xVSemsvi9enshIqJZm9VeqiYmeShh4.png);"></i>
+    			<i class="icon2" style="background-image: url(https://img.tigertaoke.com/images/14/2019/01/xVSemsvi9enshIqJZm9VeqiYmeShh4.png);"></i>
+    			<span>首页</li></span>
+    		</a>
+    		<a href="http://r0hgk.cn/app/index.php?i=14&c=entry&hd=3&do=newcat&m=tiger_newhu&pid=mm_30925699_85950268_15983200451&dluid=">
+    			<i class="icon1" style="background-image: url(https://img.tigertaoke.com/images/14/2019/01/hB6zi6CZc5qgQt4M1gRq8f717zT58Z.png);"></i>
+    			<i class="icon2" style="background-image: url(https://img.tigertaoke.com/images/14/2019/01/hB6zi6CZc5qgQt4M1gRq8f717zT58Z.png);"></i>
+    			<span>限时抢</li></span>
+    		</a>
+    		<a href="http://r0hgk.cn/app/index.php?i=14&c=entry&do=lmsearch&m=tiger_newhu&pid=mm_30925699_85950268_15983200451&dluid=">
+    			<i class="icon1" style="background-image: url(https://img.tigertaoke.com/images/14/2019/01/QnvJJ2RMV11Z84LNlmMeVnJ1rGS2lG.png);"></i>
+    			<i class="icon2" style="background-image: url(https://img.tigertaoke.com/images/14/2019/01/QnvJJ2RMV11Z84LNlmMeVnJ1rGS2lG.png);"></i>
+    			<span>超级搜</li></span>
+    		</a>
+    		<a href="http://r0hgk.cn/app/index.php?i=14&c=entry&do=haoquan&m=tiger_newhu&pid=mm_30925699_85950268_15983200451&dluid=">
+    			<i class="icon1" style="background-image: url(https://img.tigertaoke.com/images/14/2019/01/j2tx83PTjP23x5gsG8brkOATJJaxn8.png);"></i>
+    			<i class="icon2" style="background-image: url(https://img.tigertaoke.com/images/14/2019/01/j2tx83PTjP23x5gsG8brkOATJJaxn8.png);"></i>
+    			<span>领券直播</li></span>
+    		</a>
+    		<a href="http://r0hgk.cn/app/index.php?i=14&c=entry&do=member&m=tiger_newhu&pid=mm_30925699_85950268_15983200451&dluid=">
+    			<i class="icon1" style="background-image: url(https://img.tigertaoke.com/images/14/2019/01/pXtr92a8xhLKhi0K2rrIXxz3it8kP3.png);"></i>
+    			<i class="icon2" style="background-image: url(https://img.tigertaoke.com/images/14/2019/01/pXtr92a8xhLKhi0K2rrIXxz3it8kP3.png);"></i>
+    			<span>会员中心</li></span>
+    		</a>
+
+    	</div>
+    </div>
+
+    <!-- 加载数据、 -->
+
+    <script src="js/tools/layui.js" charset="utf-8"></script>
+    <!-- 假数据引用 -->
+	<script src="mock/more.js"></script>
+    <script type="text/javascript">
+    	var  limit=1;
+    	$(document).delegate("a", "click", function (e) {
+
+    		var url = $(this).attr("href");
+    		if($("#goods_box li").length == 0) return;
+
+    		window.localStorage.setItem("top", document.body.scrollTop);
+    		window.localStorage.setItem("html", $("#goods_box").html());
+    		window.localStorage.setItem("url", window.location.href);
+
+
+    	});
+    	if(window.localStorage.getItem("url") == window.location.href && window.localStorage.getItem("top") != "null") {
+
+    		$("#goods_box").html(window.localStorage.getItem("html"));
+    		document.body.scrollTop = window.localStorage.getItem("top");
+    		window.localStorage.setItem("top", "null");
+    		window.localStorage.setItem("html", "null");
+    		window.localStorage.setItem("url", "null");		
+				 	//alert(limit);
+				 	var le=$("#goods_box li").length;
+				 	limit=1+Math.ceil(le/20);
+
+				 	window.localStorage.setItem("limit", limit);
+
+				 	window.localStorage.getItem("limit")
+					//alert(limit);
+				//alert( $("#list_box li").length);
+			};
+			!function(){
+				layui.use('flow', function(){
+					var $ = layui.jquery;
+					var flow = layui.flow;
+					var pid="mm_30925699_85950268_15983200451";
+					var tj='';
+					var lm='2';
+					var dluid="";
+					var newsstyle="lb2";
+					var lbratetype="1";
+					var dltype="";
+					console.log(res)
+					flow.load({
+						elem: '#table',
+						end: '本场次商品已经加载完毕啦 ￣O￣)ノ！',
+						done: function(page, next){
+							var lis =[];
+							page=limit;
+							limit++;
+							var content='';
+							a(res)//假数据可删
+							//ajax回掉函数
+							function a(res){
+								//res=JSON.parse(res);
+								layui.each(res.data, function(index, item){
+									if(newsstyle=='lb1'){
+										content +='<li>';
+										content +='<a href="./index.php?i=14&c=entry&do=view&m=tiger_newhu'+'&lm='+lm+'&itemid='+item.itemid+'&pid='+pid+'&dluid='+dluid+'">';
+										content +='<div class="pic">';
+										content +='<img src="'+item.itempic+'_310x310.jpg" alt="">';
+
+										if(lbratetype==1 || lbratetype==3){
+											content +='<div class="tips" style="background-image: url(http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/images/tips.png);">奖'+item.rate+'</div>';
+										}else if(lbratetype==2){
+											if(dltype==1){
+												content +='<div class="tips" style="background-image: url(http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/images/tips.png);">奖'+item.rate+'</div>';
+											}					                             	  
+										}
+										content +='</div>';
+										content +='<div class="txt">';
+										content +='<h3 class="tit">';
+										if(item.shoptype=='B'){
+											content +='<i class="g-tm"></i> ';
+										}else{
+											content +='<i class="g-tb"></i> ';
+										}
+										content +=item.itemtitle;
+										content +='</h3>';
+										content +='<div class="s1">';
+										content +='<div class="l">原价￥'+item.itemprice+'</div>';
+										content +='<div class="r">已售'+item.itemsale+'</div>';
+										content +='</div>';
+										content +='<div class="s2">';
+										content +='<div class="l">';
+										content +='<em>券后价</em>';
+										content +='<span><sub>￥</sub>'+item.itemendprice+'</span>';
+										content +='</div>';
+										content +='<div class="r">';
+										content +='<div class="quan" style="background-image: url(http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/images/quan.png);"><em>'+item.couponmoney+'</em></div>';
+										content +='</div>';
+										content +='</div>';
+										content +='</div>';
+										content +='</a>';
+										content +='</li>';													
+									}
+
+
+									if(newsstyle=='lb2'){
+										content +='<li>';
+										content +='<div class="con">';
+										content +='<a href="./index.php?i=14&c=entry&do=view&m=tiger_newhu'+'&lm='+lm+'&itemid='+item.itemid+'&pid='+pid+'&dluid='+dluid+'">';
+										content +='<div class="pic">';
+										content +='<img src="'+item.itempic+'_310x310.jpg" alt="">';
+
+										if(lbratetype==1 || lbratetype==3){
+											content +='<div class="tips">奖'+item.rate+'</div>';
+										}else if(lbratetype==2){
+											if(dltype==1){
+												content +='<div class="tips">奖'+item.rate+'</div>';
+											}					                             	  
+										}
+										content +='</div>';
+										content +='<div class="txt">';
+										content +='<h3 class="tit">';
+										if(item.shoptype=='B'){
+											content +='<i class="g-tm"></i> ';
+										}else{
+											content +='<i class="g-tb"></i> ';
+										}
+										content +=item.itemtitle+'…';
+										content +='</h3>';
+										content +='<div class="s1">销量：'+item.itemsale+'</div>';
+										content +='<div class="s2"><em>券后</em><span style="font-weight: 700;">'+item.itemendprice+'元</span></div>';
+										content +='</div>';
+										content +='<div class="quan">';
+										content +='<div class="q-con">';
+										content +='<div class="s1">优惠券</div>';
+										content +='<div class="s2">'+item.couponmoney+'元</div>';
+										content +='<div class="s3">领券购买</div>';
+										content +='</div>';
+										content +='</div>';
+										content +='</a>';
+										content +='</div>';
+										content +='</li>';
+									}
+
+									if(newsstyle=='lb3'){
+
+										content +='<li>';
+										content +='<div class="con">';
+										content +='<a href="./index.php?i=14&c=entry&do=view&m=tiger_newhu'+'&lm='+lm+'&itemid='+item.itemid+'&pid='+pid+'&dluid='+dluid+'">';
+										content +='<div class="pic">';
+										content +='<img src="'+item.itempic+'_310x310.jpg" alt="">';
+										content +='</div>';
+										content +='<div class="txt">';
+										content +='<h3 class="tit">';
+										if(item.shoptype=='B'){
+											content +='<i class="g-tm"></i> ';
+										}else{
+											content +='<i class="g-tb"></i> ';
+										}
+										content += item.itemtitle+'…</h3>';
+										content +='<div class="s1">';
+										content +='<span>￥'+item.itemendprice+'元</span>';
+										content +='<em class="tdl">'+item.itemprice+'元</em>';
+										content +='<em>销量：'+item.itemsale+'</em>';
+										content +='</div>';
+										content +='<div class="s2">';
+										content +='<div class="btn btn1"><em>'+item.couponmoney+'元</em></div>';
+										if(lbratetype==1 || lbratetype==3){
+											content +='<div class="btn btn2">奖励:'+item.rate+'</div>';
+										}else if(lbratetype==2){
+											if(dltype==1){
+												content +='<div class="btn btn2">奖励:'+item.rate+'</div>';
+											}					                             	  
+										}
+										content +='</div>';
+										content +='</div>';
+										content +='</a>';
+										content +='</div>';
+										content +='</li>';
+									}
+
+									if(newsstyle=='lb4'){
+										var sjs=Math.floor(Math.random()*(98-20+1)+20);
+										content +='<li>';
+										content +='<div class="con">';
+										content +='<a href="./index.php?i=14&c=entry&do=view&m=tiger_newhu'+'&lm='+lm+'&itemid='+item.itemid+'&pid='+pid+'&dluid='+dluid+'">';
+										content +='<div class="pic">';
+										content +='<img src="'+item.itempic+'_310x310.jpg" alt="">';
+										if(lbratetype==1 || lbratetype==3){
+											content +='<div class="tips">奖'+item.rate+'</div>';
+										}else if(lbratetype==2){
+											if(dltype==1){
+												content +='<div class="tips">奖'+item.rate+'</div>';
+											}					                             	  
+										}
+
+										content +='</div>';
+										content +='<div class="txt">';
+										content +='<h3 class="tit">';
+										if(item.shoptype=='B'){
+											content +='<i class="g-tm"></i> ';
+										}else{
+											content +='<i class="g-tb"></i> ';
+										}
+										content +=''+item.itemtitle+'…';
+										content +='</h3>';
+										content +='<div class="s1"><em><sub>￥</sub>'+item.itemendprice+'</em><span>￥'+item.itemprice+'</span></div>';
+										content +='<div class="s2">';
+										content +='<em>已抢购'+sjs+'%</em>';
+										content +='<span>销量：'+item.itemsale+'</span>';
+										content +='</div>';
+										content +='<div class="line">';
+										content +='<i style="width:'+sjs+'%"></i>';
+										content +='</div>';
+										content +='</div>';
+										content +='<div class="quan">';
+										content +='<div class="q-con">';
+										content +='<div class="s1"><sub>￥</sub>'+item.couponmoney+'</div>';
+										content +='<div class="s2">优惠券</div>';
+										content +='<div class="s3">立即购买</div>';
+										content +='</div>';
+										content +='</div>';
+										content +='</a>';
+										content +='</div>';
+										content +='</li>';
+
+
+									}
+									if(newsstyle=='lb5'){
+										content +='<li>';
+										content +='<a href="./index.php?i=14&c=entry&do=view&m=tiger_newhu'+'&lm='+lm+'&itemid='+item.itemid+'&pid='+pid+'&dluid='+dluid+'">';
+										content +='<div class="pic">';
+										content +='<img src="'+item.itempic+'_310x310.jpg" alt="">';
+
+										if(lbratetype==1 || lbratetype==3){
+											content +='<div class="tips" style="background-image: url(http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/images/tips.png);">奖'+item.rate+'</div>';
+										}else if(lbratetype==2){
+											if(dltype==1){
+												content +='<div class="tips" style="background-image: url(http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/images/tips.png);">奖'+item.rate+'</div>';
+											}					                             	  
+										}
+
+
+										content +='</div>';
+										content +='<div class="txt">';
+										content +='<h3 class="tit">';
+										if(item.shoptype=='B'){
+											content +='<i class="g-tm"></i> ';
+										}else{
+											content +='<i class="g-tb"></i> ';
+										}
+										content+=item.itemtitle;
+										content +='</h3>';
+										content +='<div class="s3">';
+										content +='<div class="l"><span>券后价￥</span>'+item.itemprice+'</div>';
+										content +='<div class="r"><span>￥'+item.itemprice+'</span></div>';
+										content +='</div>';
+										content +='<div class="s4">';
+										content +='<div class="l">';
+										content +='<div class="quan" style="background-image: url(http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/images/quan.png);"><em>'+item.couponmoney+'</em></div>';
+										content +='</div>';
+										content +='<div class="r">';
+										content +='<span>已售'+item.itemsale+'</span>';
+										content +='</div>';
+										content +='</div>';
+										content +='</div>';
+										content +='</a>';
+										content +='</li>';
+									}
+
+							});
+						$("#goods_box").append(content);
+
+		        		//console.log(content);
+		        		next(lis.join(''), page < res.pages);
+		            };//回掉函数结束
+				}
+			});
+		});
+	}();
+</script>
+<!-- 结束 -->
+
+<script src="http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/js/swiper.min.js"></script>
+<link rel="stylesheet" href="http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style88/css/swiper.min.css">
+
+<script>
+	$(window).on('load', function(event) {
+		setTimeout(function() {
+
+			var i = 0;
+			var num = $('.swiper-pop .swiper-slide').size();
+
+			setTimeout(function() {
+				$('.swiper-pop').fadeOut(200);
+			}, 3000);
+
+			setInterval(function() {
+
+				$('.swiper-pop').fadeIn(200);
+
+				setTimeout(function() {
+					$('.swiper-pop').fadeOut(200);
+				}, 3000);
+
+				i++;
+				if (i == num) {
+					i = 0;
+				};
+
+				$('.swiper-pop .swiper-slide').removeClass('on');
+				$('.swiper-pop .swiper-slide').eq(i).addClass('on');
+
+			}, 4000);
+		},2000);
+
+	});
+
+	var swiper = new Swiper('.h-ban2', {
+		pagination: {
+			el: '.swiper-pagination',
+		},
+		loop: true,
+		speed: 300,
+		autoplay: {
+			delay: 3000
+		},
+	});
+	var swiper = new Swiper('.swiper-pub', {
+		direction: 'vertical',
+		loop: true,
+		speed: 300,
+		autoplay: {
+			delay: 3000
+		},
+	});
+
+	certifySwiper = new Swiper('.swiper-buy', {
+		watchSlidesProgress: true,
+		slidesPerView: 'auto',
+		centeredSlides: true,
+		loop: true,
+		speed: 300,
+		autoplay: {
+			delay: 3000
+		},
+		loopedSlides: 3,
+            // autoplay: true,
+            on: {
+            	progress: function(progress) {
+            		for (i = 0; i < this.slides.length; i++) {
+            			var slide = this.slides.eq(i);
+            			var slideProgress = this.slides[i].progress;
+            			modify = 1;
+            			if (Math.abs(slideProgress) > 1) {
+            				modify = (Math.abs(slideProgress) - 1) * 0.3 + 1;
+            			}
+            			translate = slideProgress * modify * 25 + 'px';
+            			scale = 1 - Math.abs(slideProgress) / 15;
+            			zIndex = 999 - Math.abs(Math.round(10 * slideProgress));
+            			slide.transform('translateX(' + translate + ') scale(' + scale + ')');
+            			slide.css('zIndex', zIndex);
+            			slide.css('opacity', 1);
+            			if (Math.abs(slideProgress) > 3) {
+            				slide.css('opacity', 0);
+            			}
+            		}
+
+
+            	},
+            	setTransition: function(transition) {
+            		for (var i = 0; i < this.slides.length; i++) {
+            			var slide = this.slides.eq(i)
+            			slide.transition(transition);
+            		}
+
+            	}
+            }
+
+        })
+        // 弹窗2轮播
+        // var swiper = new Swiper('.swiper-pop', {
+        // 		direction: 'vertical',
+        // 		loop: true,
+        // 		speed: 3000,
+        // 		autoplay: {
+        // 			delay: 3000
+        // 		},
+        // 	});
+
+        var swiper = new Swiper('.swiper-z1', {
+        	loop: true,
+        	speed: 300,
+        	slidesPerView: 4,
+        	slidesPerColumn: 1,
+        	autoplay: {
+        		delay: 3000
+        	},
+        });
+        var swiper = new Swiper('.swiper-z2', {
+        	loop: true,
+        	speed: 300,
+        	slidesPerView: 3,
+        	slidesPerColumn: 1,
+        	autoplay: {
+        		delay: 3000
+        	},
+        });
+    </script>
+    <script>
+    	$('.js-btn').click(function() {
+    		$(this).toggleClass('on')
+    		$('.show-box').toggleClass('on')
+    		$('.chc-box').toggleClass('on')
+    		$('body').toggleClass('ovh')
+    		$('.main').toggleClass('ovh')
+    	})
+    	$('.m-ht1 .s1').click(function() {
+    		$(this).find('i').toggleClass('on')
+    	})
+    	$('.a-close').on('click', function() {
+    		$('.chc-box').removeClass('on');
+    		$('.m-ht2 .btn').removeClass('on');
+
+    		$('.show-box').removeClass('on')
+    		$('.chc-box').removeClass('on')
+    		$('body').removeClass('ovh')
+    		$('.main').removeClass('ovh')
+
+    	})
+    	$(document).ready(function() {
+            // alert(1);
+            $('.m-pop3 .inner').addClass('on');
+        })
+    	$('.close2').on('click', function() {
+    		$('.m-pop3').addClass('on');
+    		$('.m-pop3 .inner').removeClass('on');
+    		$(this).css('display', 'none');
+						var hongbaoytype="0";//0一天显示一次  1 每次都显示
+						if(hongbaoytype!=1){
+							localStorage.setItem("first", "2");
+						}
+						
+
+            // $('.inner').removeClass('animation-show').addClass('animation-hide').css('display','none');;
+            // $('.m-pop3').css('display','none');
+        })
+    </script>
+    <a class="gotop iconfont icon-shang" href="javascript:;"></a>
+
+    <script>
+    	/*首页红包特效*/
+    	indexHB();
+    	function indexHB() {
+    		var _date = new Date();
+    		var _day = _date.getDate();
+													var hongbaoytype="0";//0一天显示一次  1 每次都显示
+													var _oldday = localStorage.getItem("day");
+													console.log(_oldday);
+													console.log(_day);
+			//                  alert(_oldday);
+			//                  alert(_day);
+			if(_oldday != _day)  {			
+				localStorage.setItem("first", "1");
+				localStorage.setItem("day",_day);
+			}
+			var _first = localStorage.getItem("first");
+			if(_first == "2") {
+				if(hongbaoytype!=1){
+					$("#hbdisp1").css({
+						display:"none"
+					})
+					$("#pop-hb").css({
+						display:"none"
+					})	  
+					return;
+				}else{
+					$("#hbdisp1").css({
+						display:"block"
+					})
+					$("#pop-hb").css({
+						display:"block"
+					})	
+				}
+			}else{
+				$("#hbdisp1").css({
+					display:"block"
+				})
+				$("#pop-hb").css({
+					display:"block"
+				})	
+			}
+
+		}
+	</script>
+	<script src="http://r0hgk.cn/addons/tiger_newhu/template/mobile/tbgoods/style9/js/jweixin-1.0.0.js"></script>
+	<script>
+		var fxtitle="多卖客";
+		var desc="介绍内容自定义";
+		var imgUrl="https://img.tigertaoke.com/images/14/2018/10/vkWco8x72cuuZtc0T2Z7B3bu1WksXi.jpeg";
+		var fxlink=window.location.href;
+		var fxdata={"title":fxtitle,"imgUrl":imgUrl,"desc":desc,"link":fxlink};
+		var appid = "";
+		var timestamp = "";
+		var nonceStr = "";
+		var signature = "";
+		wx.config({
+			debug: false,
+			appId: appid,
+			timestamp: timestamp,
+			nonceStr: nonceStr,
+			signature: signature,
+			jsApiList: [
+			"onMenuShareAppMessage",
+			"onMenuShareTimeline",
+			"chooseImage",
+			"uploadImage",
+			"downloadImage"
+			]
+		});
+		
+		wx.ready(function(){
+			wx.onMenuShareAppMessage({
+				title: fxdata['title'],
+				desc: fxdata['desc'],
+				link: fxdata['fxlink'],
+				imgUrl: fxdata['imgUrl']
+			}); 
+			wx.onMenuShareTimeline({
+				title: fxdata['title'],
+				desc: fxdata['desc'],
+				link: fxdata['fxlink'],
+				imgUrl: fxdata['imgUrl']
+			});
+		});
+
+		
+
+
+		
+	</script>
+	<script>var imgs = document.getElementsByTagName('img');for(var i=0, len=imgs.length; i < len; i++){imgs[i].onerror = function() {if (!this.getAttribute('check-src') && (this.src.indexOf('http://') > -1 || this.src.indexOf('https://') > -1)) {this.src = this.src.indexOf('http://r0hgk.cn/attachment/') == -1 ? this.src.replace('https://img.tigertaoke.com/', 'http://r0hgk.cn/attachment/') : this.src.replace('http://r0hgk.cn/attachment/', 'https://img.tigertaoke.com/');this.setAttribute('check-src', true);}}};</script><script type="text/javascript" src="http://r0hgk.cn/app/index.php?i=14&c=utility&a=visit&do=showjs&m=tiger_newhu"></script></body>
+
+	</html>

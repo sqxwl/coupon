@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="target-densitydpi=286, width=640, user-scalable=no" />
+<title>超级搜索</title>
+<link href="css/tools/css.css" rel="stylesheet" />
+<link href="css/tools/swiper-3.4.2.min.css" rel="stylesheet" />
+<script src="js/tools/jquery.js"></script>
+<script src="js/tools/swiper.js"></script>
+</head>
+
+<body style="background:#f5f5f5">
+<!--<div class="topt mgz"></div>-->
+<!--<div class="top top2 mgz xi30 cen bai">
+    超级搜索
+    <a href="#"><div class="topl"><img src="http://r0hgk.cn/addons/tiger_newhu/template/mobile/cqlist/images/left.png" align='absmiddle' style='margin-top:-4px;'></div></a>
+</div>-->
+<div class="con9 mgz">
+	<form action="./index.php?i=14&c=entry&do=cqlist&m=tiger_newhu" method="get" id="J_Form" onsubmit="return checkForm(this);">
+    <div class="con9z ov">
+        <div class="con9l f"><input type="text" name="key" id="key" value="" style="height: 60px;"  placeholder="宝贝标题/关键词 （如：女装/男装）"></div>
+         <input type="hidden" name="i" value="14">
+        <input type="hidden" name="c" value="entry">
+        <input type="hidden" name="m" value="tiger_newhu">
+        <input type="hidden" name="do" value="cqlist">
+        <input type="hidden" name="dluid" value="">
+        <input type="hidden" name="pid" value="mm_30925699_85950268_15983200451">
+        <input type="hidden" name="lx" value="2">
+         <input type="hidden" name="zn" value="">
+        <!--<a href="#"><div class="con9r r xi28 cen bai">搜索</div></a>-->
+        <button type="submit" class="con9r r xi28 cen bai" id="J_FormBtn" style="border: 0;height: 70px;">搜索</button>        
+    </div>       
+    </form>
+</div>
+<div style="margin-left: auto;margin-right: auto;width: 640px;">
+	<div class="moregd" id="moregd">
+			<ul id="keylist"></ul>
+    </div>
+</div>	
+<style>
+    .moregd{
+        border: 1px #f4f4f4 solid;
+        position: absolute;
+        z-index: 10000;
+        width: 462px;
+        left: 50%;
+        margin-left: -296px;
+        top:258px;
+        background: #ffffff;
+        display: none;
+    }
+    .moregd li{padding-left: 10px;font-size: 18px;height:45px;line-height:45px;}
+    .moregd li a{color: #545454;}
+</style>
+<script>
+	$('#key').bind('input propertychange',function(){
+		var gdkey=$(this).val();
+		if(gdkey){
+    		$("#moregd").show();  
+    		$.ajax({
+                url: "https://suggest.taobao.com/sug?code=utf-8&q="+gdkey+"&callback=jsonp",
+                dataType: 'jsonp',
+                jsonp: 'callback',
+                success: function (result) {
+                    console.log(result);
+                    if(result.result){
+                        var len = result.result.length;
+                        var gdkey = '';
+                        if(len){
+                            for (var i = 0; i < len; i++) {
+                                gdkey+= '<li id="liskeyname">'+result.result[i][0]+'</li>';
+        						//console.log(result.result[i][0]);
+        					}
+                            $("#keylist").html(gdkey);
+                            $('#moregd li').click(function(){
+                                $("#key").val($(this).text());
+                                $("#moregd").hide();
+                                $tzzulr="./index.php?i=14&c=entry&dluid=&pid=mm_30925699_85950268_15983200451&do=cqlist&m=tiger_newhu&key="+$(this).text();
+                                window.location.href=$tzzulr;
+                             })
+                        }else{
+                            $("#moregd").hide();
+                        }					            		
+                    }
+                }
+             });		                    
+        }else{
+            $("#moregd").hide();  
+        }
+    });	
+					
+					
+</script>
+<div class="con10 mgz bgbai">
+    <div class="con10t ov xi18">
+        <div class="con10tl f">热门搜索</div>
+        <!--<a href="#"><div class="con10tr r hong">清空历史记录</div></a>-->
+    </div>
+    <div class="con10f ov">
+        <ul></ul>
+    </div>
+</div>
+<div class="con11 mgz bgbai">
+    <ul>
+    	<li>
+        	<a href="./index.php?i=14&c=entry&type=1&px=&pid=mm_30925699_85950268_15983200451&dluid=&do=Newcat&m=tiger_newhu">
+            <div class="con11t cen">
+                <img src="http://tigertaoke.com/static/fl/skirt_icon.png" style="width: 60px;" align='absmiddle'>
+            </div>
+            女装
+            </a>
+        </li>
+        <li>
+        	<a href="./index.php?i=14&c=entry&type=2&px=&pid=mm_30925699_85950268_15983200451&dluid=&do=Newcat&m=tiger_newhu">
+                <div class="con11t cen">
+                    <img src="http://tigertaoke.com/static/fl/man_icon.png" style="width: 60px;" align='absmiddle'>
+                </div>
+                男装        
+            </a>
+        </li>
+        <li>
+        	<a href="./index.php?i=14&c=entry&type=3&px=&pid=mm_30925699_85950268_15983200451&dluid=&do=Newcat&m=tiger_newhu">
+                <div class="con11t cen">
+                    <img src="http://tigertaoke.com/static/fl/underwear_icon.png" style="width: 60px;" align='absmiddle'>
+                </div>
+                内衣        
+            </a>
+        </li>
+        <li>
+        	<a href="./index.php?i=14&c=entry&type=4&px=&pid=mm_30925699_85950268_15983200451&dluid=&do=Newcat&m=tiger_newhu">
+                <div class="con11t cen">
+                    <img src="http://tigertaoke.com/static/fl/makeup_icon.png" style="width: 60px;" align='absmiddle'>
+                </div>
+                美妆        
+            </a>
+        </li>
+        <li>
+        	<a href="./index.php?i=14&c=entry&type=5&px=&pid=mm_30925699_85950268_15983200451&dluid=&do=Newcat&m=tiger_newhu">
+                <div class="con11t cen">
+                    <img src="http://tigertaoke.com/static/fl/hat_icon.png" style="width: 60px;" align='absmiddle'>
+                </div>
+                配饰        
+            </a>
+        </li>
+        <li>
+        	<a href="./index.php?i=14&c=entry&type=6&px=&pid=mm_30925699_85950268_15983200451&dluid=&do=Newcat&m=tiger_newhu">
+                <div class="con11t cen">
+                    <img src="http://tigertaoke.com/static/fl/shoes_icon.png" style="width: 60px;" align='absmiddle'>
+                </div>
+                鞋品        
+            </a>
+        </li>
+        <li>
+        	<a href="./index.php?i=14&c=entry&type=7&px=&pid=mm_30925699_85950268_15983200451&dluid=&do=Newcat&m=tiger_newhu">
+                <div class="con11t cen">
+                    <img src="http://tigertaoke.com/static/fl/package_icon.png" style="width: 60px;" align='absmiddle'>
+                </div>
+                箱包        
+            </a>
+        </li>
+        <li>
+        	<a href="./index.php?i=14&c=entry&type=9&px=&pid=mm_30925699_85950268_15983200451&dluid=&do=Newcat&m=tiger_newhu">
+                <div class="con11t cen">
+                    <img src="http://tigertaoke.com/static/fl/child1_icon.png" style="width: 60px;" align='absmiddle'>
+                </div>
+                母婴        
+            </a>
+        </li>
+        <li>
+        	<a href="./index.php?i=14&c=entry&type=10&px=&pid=mm_30925699_85950268_15983200451&dluid=&do=Newcat&m=tiger_newhu">
+                <div class="con11t cen">
+                    <img src="http://tigertaoke.com/static/fl/home_icon.png" style="width: 60px;" align='absmiddle'>
+                </div>
+                居家        
+            </a>
+        </li>
+        <li>
+        	<a href="./index.php?i=14&c=entry&type=11&px=&pid=mm_30925699_85950268_15983200451&dluid=&do=Newcat&m=tiger_newhu">
+                <div class="con11t cen">
+                    <img src="http://tigertaoke.com/static/fl/food_icon.png" style="width: 60px;" align='absmiddle'>
+                </div>
+                美食        
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div class="con8 mgz xi18 cen bgbai">-猜你喜欢-</div>
+<div class="con7 mgz">
+    <ul>
+       <li>
+            <a href="./index.php?i=14&c=entry&itemid=562698885448&lm=2&pid=mm_30925699_85950268_15983200451&do=view&m=tiger_newhu">
+                <div class="con7t cen"><img src="http://img.haodanku.com/oimg_562698885448_1552783505.jpg_300x300q60.jpg" align='absmiddle'></div>
+                <div class="con7m xi20 hui" style="height: 37px;overflow: hidden;">妇炎洁洗液女性私处止痒杀菌去异味护理液清洗少女私密处洁阴清洁</div>
+                <div class="con7f ov">
+                    <div class="con7fl f xi18">原价￥<span class="xi22">29.90</span></div>
+                    <div class="con7fr r xi18 hong">券后价￥<span class="xi20">14.90</span></div>
+                </div>
+                <div class="con7x2 ov">
+                    <div class="con7x2l f">
+                        <div class="con7x2ll f xi18 bai">领券</div>
+                        <div class="con7x2lr f xi18">减15</div>
+                    </div>
+                    <div class="con7xr r xi18 hui">销量3775</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="./index.php?i=14&c=entry&itemid=535720717558&lm=2&pid=mm_30925699_85950268_15983200451&do=view&m=tiger_newhu">
+                <div class="con7t cen"><img src="http://img.alicdn.com/imgextra/i3/1954297233/TB2mAIJXYBmpuFjSZFAXXaQ0pXa_!!1954297233.jpg_300x300q60.jpg" align='absmiddle'></div>
+                <div class="con7m xi20 hui" style="height: 37px;overflow: hidden;">花花公子男士短款钱包正品票夹头层牛皮时尚休闲商务韩版潮流钱夹</div>
+                <div class="con7f ov">
+                    <div class="con7fl f xi18">原价￥<span class="xi22">149.00</span></div>
+                    <div class="con7fr r xi18 hong">券后价￥<span class="xi20">89.00</span></div>
+                </div>
+                <div class="con7x2 ov">
+                    <div class="con7x2l f">
+                        <div class="con7x2ll f xi18 bai">领券</div>
+                        <div class="con7x2lr f xi18">减60</div>
+                    </div>
+                    <div class="con7xr r xi18 hui">销量15</div>
+                </div>
+            </a>
+        </li>  
+    </ul>
+</div>
+<div class="footer mgz">
+    <ul>
+         
+        <a href="http://r0hgk.cn/app/index.php?i=14&c=entry&do=index&m=tiger_newhu&pid=mm_30925699_85950268_15983200451&dluid=&pid=mm_30925699_85950268_15983200451"><li class="li2s" style="background: url(https://img.tigertaoke.com/images/14/2019/01/xVSemsvi9enshIqJZm9VeqiYmeShh4.png) center 14px no-repeat;background-size:35px;font-size: 16px;">首页</li></a>
+
+        
+        <a href="http://r0hgk.cn/app/index.php?i=14&c=entry&hd=3&do=newcat&m=tiger_newhu&pid=mm_30925699_85950268_15983200451&dluid=&pid=mm_30925699_85950268_15983200451"><li class="li2s" style="background: url(https://img.tigertaoke.com/images/14/2019/01/hB6zi6CZc5qgQt4M1gRq8f717zT58Z.png) center 14px no-repeat;background-size:35px;font-size: 16px;">限时抢</li></a>
+
+        
+        <a href="http://r0hgk.cn/app/index.php?i=14&c=entry&do=lmsearch&m=tiger_newhu&pid=mm_30925699_85950268_15983200451&dluid=&pid=mm_30925699_85950268_15983200451"><li class="li2s" style="background: url(https://img.tigertaoke.com/images/14/2019/01/QnvJJ2RMV11Z84LNlmMeVnJ1rGS2lG.png) center 14px no-repeat;background-size:35px;font-size: 16px;">超级搜</li></a>
+
+        
+        <a href="http://r0hgk.cn/app/index.php?i=14&c=entry&do=haoquan&m=tiger_newhu&pid=mm_30925699_85950268_15983200451&dluid=&pid=mm_30925699_85950268_15983200451"><li class="li2s" style="background: url(https://img.tigertaoke.com/images/14/2019/01/j2tx83PTjP23x5gsG8brkOATJJaxn8.png) center 14px no-repeat;background-size:35px;font-size: 16px;">领券直播</li></a>
+
+        
+        <a href="http://r0hgk.cn/app/index.php?i=14&c=entry&do=member&m=tiger_newhu&pid=mm_30925699_85950268_15983200451&dluid=&pid=mm_30925699_85950268_15983200451"><li class="li2s" style="background: url(https://img.tigertaoke.com/images/14/2019/01/pXtr92a8xhLKhi0K2rrIXxz3it8kP3.png) center 14px no-repeat;background-size:35px;font-size: 16px;">会员中心</li></a>
+
+            </ul>
+</div>
+
+<script>var imgs = document.getElementsByTagName('img');for(var i=0, len=imgs.length; i < len; i++){imgs[i].onerror = function() {if (!this.getAttribute('check-src') && (this.src.indexOf('http://') > -1 || this.src.indexOf('https://') > -1)) {this.src = this.src.indexOf('http://r0hgk.cn/attachment/') == -1 ? this.src.replace('https://img.tigertaoke.com/', 'http://r0hgk.cn/attachment/') : this.src.replace('http://r0hgk.cn/attachment/', 'https://img.tigertaoke.com/');this.setAttribute('check-src', true);}}};</script><script type="text/javascript" src="http://r0hgk.cn/app/index.php?i=14&c=utility&a=visit&do=showjs&m=tiger_newhu"></script></body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="renderer" content="webkit" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <title>超级拼团好货</title>
+    <meta name="description" content="超级拼团好货" />
+    <meta name="keywords" content="超级拼团好货" />
+	<link rel="stylesheet" href="css/tools/style.css" />
+ 	<link rel="stylesheet" href="css/tools/ul-quan3.css">
+    <link rel="stylesheet" href="css/tools/m-cui.css">
+    <link rel="stylesheet" href="css/tools/m-lib.css" />
+	<script src="js/tools/jquery.js"></script>
+    <script src="js/tools/lib.js"></script>
+</head>
+<body style="margin:0 auto;">
+
+    <div class="slot-ban" id="top">
+        <a href=""><img src="images/pt.jpg" alt=""></a>
+    </div>
+
+    <div class="slot-tabs">
+        <div class="header-nav" style="padding-right:0">
+            <ul class="header-nav-list">
+                <li class="item active js-nav-item" style="width: 50%;"><a href="javascript:;"   onclick="classtype(4071);"><span>聚划算拼团</span></a></li>
+                <li class="item js-nav-item" style="width: 50%;"><a href="javascript:;"  onclick="classtype(6640);"><span>更多拼团</span></a></li>
+  
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="slot-list" id="table" style="background: #f1f1f1; padding-top:4px;">
+				<ul class="ul-quan3" id="list">
+					<li>
+						<div class="con">
+							<a href="">
+								<div class="pic">
+									<img src="//img.alicdn.com/bao/uploaded/i2/2966444140/TB2u_lRrfuSBuNkHFqDXXXfhVXa_!!2966444140-0-item_pic.jpg" alt="">
+								</div>
+								<div class="txt">
+									<h3 class="tit">
+										<i class="g-tm"></i> 博士伦美瞳半年抛女大小直径隐形眼镜官网正品混血欧美网红款2片博士伦美瞳半年抛女大小直径隐形眼镜官网正品混血欧美网红款2片博士伦美瞳半年抛女大小直径隐形眼镜官网正品混血欧美网红款2片</h3>
+										<div class="s1">
+											<em>2人团</em>
+										</div><div class="s2">
+											<em>单买价82.6</em>
+											<span>仅剩：548件</span>
+										</div>
+									<div class="line" style="border:0;font-size:12px;height:14px">2019-03-18 08:59:59结束</div>
+								</div>
+								<div class="quan">
+									<div class="q-con">
+										<div class="s1">
+											<sub>￥</sub>70.2
+										</div>
+										<div class="s2">拼团价</div>
+										<div class="s3">立即拼团</div>
+									</div>
+								</div>
+							</a>
+						</div>
+					</li>
+				</ul>
+				
+    </div>
+
+
+    <div class="pop-bg"></div>
+
+    <a href="#top" class="to-top"></a>
+	<link href="css/tools/layui.css" rel="stylesheet">
+	<script src="js/tools/layui.js" charset="utf-8"></script>
+	
+	<script type="text/javascript">
+		var  limit=1;
+		var MaterialId="4071";
+		function classtype(a){
+			MaterialId=a;
+			limit=1;
+			//alert(MaterialId);
+			$("#list").html("");
+			;!function(){
+				layui.use('flow', function(){
+					var $ = layui.jquery;
+					var flow = layui.flow;		
+					// alert(tzurl);
+					flow.load({
+						elem: '#table',
+						end: '本场次商品已经加载完毕啦 ￣O￣)ノ！',
+						done: function(page, next){
+							var lis =[];
+										//var lbratetype="1";
+										//var dltype="";
+										page=limit;
+										limit++;
+										
+										//console.log(page);
+										//console.log("./index.php?i=14&c=entry&key=&pid=mm_30925699_85950268_15983200451&do=cjdej1111&m=tiger_newhu&page="+page+"&MaterialId="+MaterialId);
+										var tmpl='';
+
+										$.get("./index.php?i=14&c=entry&key=&pid=mm_30925699_85950268_15983200451&do=tbpt&m=tiger_newhu&page="+page+"&MaterialId="+MaterialId, function(res){
+										// alert(res); 
+										res=JSON.parse(res);
+
+
+										console.log(res);
+										layui.each(res.data, function(index, item){
+
+											tmpl+='<li>';
+											tmpl+='<div class="con">';
+											tmpl+='<a href="./index.php?i=14&c=entry&do=view&m=tiger_newhu'+'&id='+item.id+'&dluid=&lm='+item.lm+'&itemid='+item.itemid+'&org_price='+item.orig_price+'&price='+item.jdd_price+'&coupons_price='+item.couponmoney+'&goods_sale='+item.itemsale+'&title='+item.itemtitle+'&pic_url='+encodeURIComponent(item.itempic)+'&gopturl='+item.click_url+'">';
+											tmpl+='<div class="pic">';
+											tmpl+='<img src="'+item.itempic+'" alt="">';
+											//					tmpl+='<div class="tips">奖152</div>';
+											tmpl+='</div>';
+											tmpl+='<div class="txt">';
+											tmpl+='<h3 class="tit">';
+											if(item.shoptype==1){
+												tmpl+='<i class="g-tm"></i> ';
+											}else{
+												tmpl+='<i class="g-tb"></i> ';
+											}		
+											tmpl+=item.itemtitle+'…</h3>';
+											tmpl+='<div class="s1"><em>'+item.jdd_num+'人团</em></div>';
+											tmpl+='<div class="s2">';
+											tmpl+='<em>单买价'+item.orig_price+'</em>';
+											tmpl+='<span>仅剩：'+item.stock+'件</span>';
+											tmpl+='</div>';
+											tmpl+='<div class="line" style="border:0;font-size:12px;height:14px">';
+											tmpl+=''+item.oetime+'结束';
+											tmpl+='</div>';
+											tmpl+='</div>';
+											tmpl+='<div class="quan">';
+											tmpl+='<div class="q-con">';
+											tmpl+='<div class="s1"><sub>￥</sub>'+item.jdd_price+'</div>';
+											tmpl+='<div class="s2">拼团价</div>';
+											tmpl+='<div class="s3">立即拼团</div>';
+											tmpl+='</div>';
+											tmpl+='</div>';
+											tmpl+='</a>';
+											tmpl+='</div>';
+											tmpl+='</li>';	
+										});
+									$("#list").append(tmpl);
+										console.log("页"+page);
+										next(lis.join(''), page < res.pages);
+									});
+								}
+							});
+							//按屏加载图片
+							flow.lazyimg({
+								elem: '#table img'
+								//,scrollElem: '#LAY_demo3' //一般不用设置，此处只是演示需要。
+							});
+						});
+					}();
+		}
+		
+	   $(document).delegate("a", "click", function (e) {
+	
+	        var url = $(this).attr("href");
+			//alert(url);
+	        if($("#list a").length == 0) return;
+	        window.localStorage.setItem("top", document.body.scrollTop);
+	        window.localStorage.setItem("html", $("#list").html());
+	        window.localStorage.setItem("url", window.location.href);
+				// alert( $("#list").html());
+			
+	    });
+		
+	
+	    if(window.localStorage.getItem("url") == window.location.href && window.localStorage.getItem("top") != "null") {
+			
+	      $("#list").html(window.localStorage.getItem("html"));
+	        document.body.scrollTop = window.localStorage.getItem("top");
+	        window.localStorage.setItem("top", "null");
+	        window.localStorage.setItem("html", "null");
+	        window.localStorage.setItem("url", "null");		
+			 	//alert(limit);
+			var le=$("#list a").length;
+			limit=1+Math.ceil(le/20);
+			 window.localStorage.setItem("limit", limit);
+			 window.localStorage.getItem("limit")
+	    };
+	    !function(){
+			layui.use('flow', function(){
+			    var $ = layui.jquery;
+			    var flow = layui.flow;		
+				// alert(tzurl);
+			    flow.load({
+			        elem: '#table',
+			        end: '本场次商品已经加载完毕啦 ￣O￣)ノ！',
+			        done: function(page, next){
+			        	var lis =[];
+			                //var lbratetype="1";
+			            		//var dltype="";
+			            		page=limit;
+			            		limit++;
+
+								//console.log(page);
+								//console.log("./index.php?i=14&c=entry&key=&pid=mm_30925699_85950268_15983200451&do=cjdej1111&m=tiger_newhu&page="+page+"&MaterialId="+MaterialId);
+								var tmpl='';
+
+								$.get("./index.php?i=14&c=entry&key=&pid=mm_30925699_85950268_15983200451&do=tbpt&m=tiger_newhu&page="+page+"&MaterialId="+MaterialId, function(res){
+			                    // alert(res); 
+			                    res=JSON.parse(res);
+			                    console.log(res);
+			                    layui.each(res.data, function(index, item){
+			                    	tmpl+='<li>';
+			                    	tmpl+='<div class="con">';
+			                    	tmpl+='<a href="./index.php?i=14&c=entry&do=view&m=tiger_newhu'+'&id='+item.id+'&dluid=&lm='+item.lm+'&itemid='+item.itemid+'&org_price='+item.orig_price+'&price='+item.jdd_price+'&coupons_price='+item.couponmoney+'&goods_sale='+item.itemsale+'&title='+item.itemtitle+'&pic_url='+encodeURIComponent(item.itempic)+'&gopturl='+item.click_url+'">';
+			                    	tmpl+='<div class="pic">';
+			                    	tmpl+='<img src="'+item.itempic+'" alt="">';
+									//					tmpl+='<div class="tips">奖152</div>';
+									tmpl+='</div>';
+									tmpl+='<div class="txt">';
+									tmpl+='<h3 class="tit">';
+									if(item.shoptype==1){
+										tmpl+='<i class="g-tm"></i> ';
+									}else{
+										tmpl+='<i class="g-tb"></i> ';
+									}		
+									tmpl+=item.itemtitle+'…</h3>';
+									tmpl+='<div class="s1"><em>'+item.jdd_num+'人团</em></div>';
+									tmpl+='<div class="s2">';
+									tmpl+='<em>单买价'+item.orig_price+'</em>';
+									tmpl+='<span>仅剩：'+item.stock+'件</span>';
+									tmpl+='</div>';
+									tmpl+='<div class="line" style="border:0;font-size:12px;height:14px">';
+									tmpl+=''+item.oetime+'结束';
+									tmpl+='</div>';
+									tmpl+='</div>';
+									tmpl+='<div class="quan">';
+									tmpl+='<div class="q-con">';
+									tmpl+='<div class="s1"><sub>￥</sub>'+item.jdd_price+'</div>';
+									tmpl+='<div class="s2">拼团价</div>';
+									tmpl+='<div class="s3">立即拼团</div>';
+									tmpl+='</div>';
+									tmpl+='</div>';
+									tmpl+='</a>';
+									tmpl+='</div>';
+									tmpl+='</li>';
+			                    });
+	                            $("#list").append(tmpl);
+	                            console.log(page);
+			                    next(lis.join(''), page < res.pages);
+			                });
+			            }
+			        });
+					//按屏加载图片
+					flow.lazyimg({
+						elem: '#table img'
+						//,scrollElem: '#LAY_demo3' //一般不用设置，此处只是演示需要。
+					});
+			    });
+			}();
+		</script>
+	    <script>
+	    	//浮动菜单
+			$(function() {
+				$(window).scroll(function() {
+						//如果滚轮向下滚了
+						if($(document).scrollTop() > 180){
+							$(".slot-tabs").addClass("fix-top");// fix-top
+						}else{
+							$(".slot-tabs").removeClass("fix-top");// fix-top
+						}
+					
+				});
+			});
+	    </script>
+<script>var imgs = document.getElementsByTagName('img');for(var i=0, len=imgs.length; i < len; i++){imgs[i].onerror = function() {if (!this.getAttribute('check-src') && (this.src.indexOf('http://') > -1 || this.src.indexOf('https://') > -1)) {this.src = this.src.indexOf('http://r0hgk.cn/attachment/') == -1 ? this.src.replace('https://img.tigertaoke.com/', 'http://r0hgk.cn/attachment/') : this.src.replace('http://r0hgk.cn/attachment/', 'https://img.tigertaoke.com/');this.setAttribute('check-src', true);}}};</script><script type="text/javascript" src="http://r0hgk.cn/app/index.php?i=14&c=utility&a=visit&do=showjs&m=tiger_newhu"></script></body>
+</html>
